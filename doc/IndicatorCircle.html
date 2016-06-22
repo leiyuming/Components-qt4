@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>IndicatorCircle 参考文档</title>
+<link href="style/base.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="header">
+		<p>Components 参考文档</p>
+	</div>
+	<div id="body">
+		<p class="title">IndicatorCircle控件</p>
+		<p>IndicatorCircle控件提供等待的动画。<a href="#detial">查看详细</a></p>
+      <p>继承自Item。</p>        
+	  <p><a name="property" class="subject">属性</a></p>
+		<ul>
+		  <li><a class="property" href="#radius">radius</a> : int</li>
+		  <li><a class="property" href="#count">count</a> : int</li>
+ 		  <li><a class="property" href="#indicator">indicator</a> : Component</li>
+     </ul>
+		<p><a name="signals" class="subject">信号</a></p>
+	  <p>参见QML  Item Element</p>
+		<p><a name="methods" class="subject">方法</a></p>
+		<p>参见QML  Item Element</p>
+	  <p><a name="detail" class="subject">详细说明</a></p>
+		<p>IndicatorCircle提供一个等待的动画，可以应用于开网页，应用初始化等的费时操作。</p>
+		<p>网上有很多类似有图所示的loading的GIF图片<img src="resource/loading.gif" width="32" height="32" />，但是有时候很想自定义一个，IndicatorCircle则提供了自定义的功能，可以满足小部分需求。</p>
+		<p><a name="usage" class="subject">用法</a></p>
+        <p>下面这个例子被包含在<a href="example/ExampleIndicatorCircle.qml">Example<span class="title">IndicatorCircle</span>.qml</a>:</p>
+	  <pre>IndicatorCircle {
+    indicator: Rectangle { width: 4; height: 4; color: "black"; smooth: true }
+}</pre>
+<p><a name="property_document" class="subject">属性文档</a></p>
+	  <p class="property"><a class="property" name="radius">radius</a> : int
+      <p>这个属性用于控制转动半径。</p>
+      <p class="property"><a class="property" name="count">count</a> : int
+      <p>这个属性设置指示器小块的数量。</p>
+        <p class="property"><a class="property" name="indicator">indicator</a> : int
+      <p>这个属性控制指示器小块的形状，可以是任何可视的QML元素。</p>
+</div>
+<div id="footer">
+<p>Made by lei</p>
+</div>
+</body>
+</html>

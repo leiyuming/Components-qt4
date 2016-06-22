@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ToolBoxItem参考文档</title>
+<link href="style/base.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="header">
+		<p>Components 参考文档</p>
+	</div>
+<div id="body">
+		<p class="title">ToolBoxItem控件</p>
+  <p>ToolBoxItem控件被用于ToolBox控件。<a href="#detial">查看详细</a></p>
+  <p>继承自Item。</p>        
+  <p><a name="property" class="subject">属性</a></p>
+		<ul>
+		  <li><a class="property" href="#header">header</a> : Component</li>
+		  <li><a class="property" href="#view">view</a> : Component</li>
+	  </ul>
+  <p><a name="signals" class="subject">信号</a></p>
+	  <p>参见Item</p>
+		<p><a name="methods" class="subject">方法</a></p>
+		<p>参见Item</p>
+  <p><a name="detail" class="subject">详细说明</a></p>
+		<p>ToolBoxItem本身也是一个容器，通过<a class="property" href="#header">header</a>来实现对<a class="property" href="#view">view</a>的控制，最后通过ToolBox容器来完成组的控制，最终效果跟QQ好友列表组一样。</p>
+  <p><a name="usage" class="subject">用法</a></p>
+  <pre>import QtQuick 1.1
+import Components 1.0
+
+ToolBox {
+    id: toolbox
+    width: 300; height: 400
+    Repeater {
+        model: 5
+        delegate: ToolBoxItem {
+            id: toolboxitem
+            width: toolbox.controlArea.width
+            state: "expand"
+            header: Button {
+                enableCursor: true
+                cursor: Qt.PointingHandCursor
+                Rectangle {
+                    id: headerItem
+                    width: toolboxitem.width; height: 30
+                    color: toolboxitem.state == "expand" ? "tomato" : "darkred"
+                    Text { anchors.centerIn: parent; text: "title " + index }
+                }
+                onClicked: {
+                    if (toolboxitem.state == "expand") {
+                        toolboxitem.height = headerItem.height
+                        toolboxitem.state = "unexpand"
+                    }
+                    else {
+                        toolboxitem.height = toolboxitem.childrenRect.height
+                        toolboxitem.state = "expand"
+                    }
+                }
+            }
+            view: Rectangle {
+                width: toolbox.width; height: 200; color: Qt.rgba(Math.random(), Math.random(), Math.random(), 1)
+            }
+        }
+    }
+}</pre>
+<p>着实不想说话了，自己看，以后心情好了再加上。</p>
+<p><a name="property_document" class="subject">属性文档</a></p>
+  <p class="property"><a class="property" name="header">header</a> : Component
+  <p>参见QML Component Element。</p>
+        </p>
+      <p class="property"><a class="property" name="view">view</a> : Component
+      <p>参见QML Component Element。</p>
+</div>
+<div id="footer">
+<p>Made by lei</p>
+</div>
+</body>
+</html>

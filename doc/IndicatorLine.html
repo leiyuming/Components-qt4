@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>IndicatorLine 参考文档</title>
+<link href="style/base.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="header">
+		<p>Components 参考文档</p>
+	</div>
+<div id="body">
+  <p class="title"> IndicatorLine控件</p>
+  <p> <span class="title">IndicatorLine</span>控件提供等待的动画。<a href="#detial">查看详细</a></p>
+      <p>继承自Item。</p>        
+	  <p><a name="property" class="subject">属性</a></p>
+		<ul>
+		  <li><a class="property" href="#spacing">spacing</a> : int</li>
+ 		  <li><a class="property" href="#count">count</a> : int</li>
+ 		  <li><a class="property" href="#indicator">indicator</a> : Component</li>
+    </ul>
+		<p><a name="signals" class="subject">信号</a></p>
+	  <p>参见QML  Item Element</p>
+		<p><a name="methods" class="subject">方法</a></p>
+		<p>参见QML  Item Element</p>
+	  <p><a name="detail" class="subject">详细说明</a></p>
+		<p>IndicatorLine提供一个等待的动画，可以应用于开网页，应用初始化等的费时操作。</p>
+		<p>等待动画类似Windows 8 IE 10浏览器加载网页时的效果，其中每一个小点可以通过<a class="property" href="#indicator">indicator</a>属性自定义成任何形状。</p>
+	  <p><a name="usage" class="subject">用法</a></p>
+        <p>下面这个例子被包含在<a href="example/ExampleIndicatorLine.qml">ExampleIndicatorLine.qml</a>:</p>
+	  <pre>IndicatorLine {
+    width: 300; height: 20
+    indicator: Rectangle {
+        width: 8; height: 8; radius: 4; smooth: true
+        color: "dimgray"
+    }
+}</pre>
+<p><a name="property_document" class="subject">属性文档</a></p>
+  <p class="property"><a class="property" name="spacing">spacing</a> : int
+      <p>这个属性用于控制线性指示器元素之间的间隔行为。</p>
+  <p class="property"><a class="property" name="count">count</a> : int
+  <p>这个属性用于控制线性指示器元素的数量。</p>
+  <p class="property"><a class="property" name="indicator">indicator</a> : Component
+  <p>这个属性用于定义线性指示器元素的形状。</p>
+</div>
+<div id="footer">
+<p>Made by lei</p>
+</div>
+</body>
+</html>

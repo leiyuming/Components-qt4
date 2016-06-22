@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ChainedView参考文档</title>
+<link href="style/base.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="header">
+		<p>Components 参考文档</p>
+	</div>
+<div id="body">
+  <p class="title">ChainedView控件</p>
+  <p>ChainedView控件提供一个视图的链式管理。<a href="#detial">查看详细</a></p>
+      <p>继承自Item。</p>        
+  <p><a name="property" class="subject">属性</a></p>
+  <p>参见QML Item Element。</p>
+  <p><a name="signals" class="subject">信号</a></p>
+  <p>参见QML Item Element。</p>		
+  <p><a name="methods" class="subject">方法</a></p>
+		  <li>ChainedView::<a class="property" href="#show">show</a>(view, parameter)</li>
+		  <li>ChainedView::<a class="property" href="#clear">clear</a>()</li>
+		  <li>Item ChainedView::<a class="property" href="#getCurrentView">getCurrentView</a>()</li>
+  <p><a name="detail" class="subject">详细说明</a></p>
+		<p>很多时候，我们会有这样的需求，在一个页面上点击一个按钮后，显示另一个页面，类似向导界面。</p>
+		<p>ChainedView控件提供一个类似的功能，不同之处在于，当你切换到“下一页”时，上一个页面会被删除掉，也就是说上一个页面的数据也会消失。</p>
+	  <p><a name="usage" class="subject">用法</a></p>
+  <p>下面这个例子被包含在<a href="example/ExampleChainedView.qml">ExampleChainedView.qml</a>:</p>
+  <pre>ChainedView {
+    id: chainedview
+    width: 600
+    height: 400
+
+    Component {
+        id: view1
+        Rectangle {
+            width: chainedview.width; height: chainedview.height; color: "lightgray"
+            Text { text: "view 1"; anchors.centerIn: parent }
+            Button {
+                anchors { bottom: parent.bottom; right: parent.right }
+                Rectangle { width: 40; height: 20; color: "black" }
+                onClicked: chainedview.show(view2)
+            }
+        }
+    }
+
+    Component {
+        id: view2
+        Rectangle {
+            width: chainedview.width; height: chainedview.height; color: "gray"
+            Text { text: "view 2"; anchors.centerIn: parent }
+            Button {
+                anchors { bottom: parent.bottom; right: parent.right }
+                Rectangle { width: 40; height: 20; color: "black" }
+                onClicked: chainedview.show("file:ExampleToolBox.qml", {"width": chainedview.width})
+            }
+        }
+    }
+    Component.onCompleted: show(view1)
+}</pre>
+<p>ChainedView控件支持Component和qml文件。</p>
+<p><a name="property_document" class="subject">方法文档</a></p>
+  <p class="property">ChainedView::<a class="property" name="show">show</a>(view, parameter)
+  <p>view可以是qml文件地址，也可以是Component对象。</p>
+  <p>parameter参数可选，用于view的初始化。</p>
+  <p class="property">ChainedView::<a class="property" name="clear">clear</a>()
+  <p>这个方法用于清除当前视图。</p>
+  <p class="property">Item ChainedView:<a class="property" name="getCurrentView">getCurrentView</a>()
+  <p>返回当前视图对象。</p>
+</div>
+<div id="footer">
+<p>Made by lei</p>
+</div>
+</body>
+</html>

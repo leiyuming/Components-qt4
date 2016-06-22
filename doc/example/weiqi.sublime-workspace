@@ -1,0 +1,899 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"re",
+				"retValue"
+			],
+			[
+				"c",
+				"centerIn"
+			],
+			[
+				"con",
+				"Components"
+			],
+			[
+				"onC",
+				"onCompleted"
+			],
+			[
+				"man",
+				"mainwindow"
+			],
+			[
+				"sou",
+				"sourceSize"
+			],
+			[
+				"Ma",
+				"MainPageControl"
+			],
+			[
+				"Fla",
+				"FlashManControl"
+			],
+			[
+				"fla",
+				"flashManControl"
+			],
+			[
+				"clou",
+				"cloudServiceControl"
+			],
+			[
+				"conn",
+				"connect"
+			],
+			[
+				"clo",
+				"CloudServiceControl"
+			],
+			[
+				"cl",
+				"CloudServiceControl"
+			],
+			[
+				"Com",
+				"Component"
+			],
+			[
+				"inf",
+				"infomation"
+			],
+			[
+				"pro",
+				"property"
+			],
+			[
+				"s",
+				"style"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"f",
+				"for	for (…) {…}"
+			],
+			[
+				"com",
+				"components"
+			],
+			[
+				"pr",
+				"proto	Prototype"
+			],
+			[
+				"par",
+				"parameter"
+			],
+			[
+				"t",
+				"typeof"
+			],
+			[
+				"proto",
+				"prototype"
+			],
+			[
+				"d",
+				"debug"
+			],
+			[
+				"Co",
+				"Column"
+			],
+			[
+				"tex",
+				"text_rom_name"
+			],
+			[
+				"rom",
+				"rom_name"
+			],
+			[
+				"head",
+				"headerItemWidth"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"ve",
+				"vendor"
+			],
+			[
+				"top",
+				"top"
+			],
+			[
+				"view",
+				"view_finished"
+			],
+			[
+				"ri",
+				"rightMargin"
+			],
+			[
+				"q",
+				"qsTr"
+			],
+			[
+				"chec",
+				"checked"
+			],
+			[
+				"che",
+				"checked"
+			],
+			[
+				"to",
+				"topMargin"
+			],
+			[
+				"te",
+				"text_type"
+			],
+			[
+				"rig",
+				"right"
+			],
+			[
+				"ro",
+				"rom_path_view"
+			],
+			[
+				"le",
+				"left"
+			],
+			[
+				"flash",
+				"flashPageBanner"
+			],
+			[
+				"fi",
+				"fill"
+			],
+			[
+				"m",
+				"margins"
+			],
+			[
+				"model",
+				"modelData"
+			],
+			[
+				"v",
+				"verticalCenter"
+			],
+			[
+				"b",
+				"bottomMargin"
+			],
+			[
+				"right",
+				"rightMargin"
+			],
+			[
+				"l",
+				"left"
+			],
+			[
+				"left",
+				"leftMargin"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"im",
+				"images"
+			],
+			[
+				"i",
+				"border-image"
+			],
+			[
+				"en",
+				"enable"
+			],
+			[
+				"pop",
+				"popWindow"
+			],
+			[
+				"Re",
+				"Rectangle"
+			],
+			[
+				"window",
+				"windowEvent"
+			],
+			[
+				"h",
+				"headerItemWidth"
+			],
+			[
+				"tav",
+				"tabview"
+			],
+			[
+				"hear",
+				"headerItemHeight"
+			],
+			[
+				"Gra",
+				"GradientStop"
+			],
+			[
+				"bac",
+				"backgroundColor_pressed"
+			],
+			[
+				"but",
+				"button_close"
+			],
+			[
+				"button",
+				"button_min"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"tran",
+				"transparent"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/D/Project/Weiqi/ChequerMoudle.js",
+			"settings":
+			{
+				"buffer_size": 7482,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Project/Weiqi/Indicator.qml",
+			"settings":
+			{
+				"buffer_size": 70,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Project/Weiqi/ChessBoard.qml",
+			"settings":
+			{
+				"buffer_size": 2064,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/User/QML.sublime-build",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Discover Packages"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: #!/usr/bin/env"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control:remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"pa",
+				"Package Control: Remove Package"
+			]
+		],
+		"width": 386.0
+	},
+	"console":
+	{
+		"height": 198.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/Project/LeiPlayer/qml/view/Welcome.qml",
+		"/E/Game/NZA/gsdata/gslaunch",
+		"/E/Game/剑侠情缘3/bin/zhcn/KG3DEngineData/Shader/BaseShader.fx",
+		"/E/Game/剑侠情缘3/bin/zhcn/KG3DEngineData/场景反射.def",
+		"/E/Game/剑侠情缘3/bin/zhcn/userdata/lei_yuming/config.dat",
+		"/E/Game/剑侠情缘3/bin/zhcn/data/source/player/F1/动作/F1scy03技能05-04.tani",
+		"/E/Game/剑侠情缘3/bin/zhcn/data/source/doodad/南诏皇宫/WJ_nz铜镜001.Mtl",
+		"/E/Game/剑侠情缘3/bin/zhcn/scripts/skill/帮会/帮会_帮会旗帜_千秋万代.lua",
+		"/E/Game/剑侠情缘3/bin/zhcn/scripts/skill/五毒/镇派/补天.lua",
+		"/E/Game/Trine 2/data/version/application_trine2.ver",
+		"/D/Project/Weiqi/ChessPiece.qml",
+		"/D/Project/Weiqi/ChequerModel.js",
+		"/D/Project/Components/doc/ExampleSlider.qml",
+		"/D/Projects/Components/doc/Button.html",
+		"/D/Qt/4.8.2/imports/Components/qmldir",
+		"/C/Users/leiyuming/Desktop/jQuery.js",
+		"/C/Users/leiyuming/Desktop/animated-menu/animated-menu/animated-menu.css",
+		"/D/Projects/Components/qmldir",
+		"/C/Users/leiyuming/Desktop/animated-menu/animated-menu/animated-menu.html",
+		"/C/Users/leiyuming/Desktop/animated-menu/animated-menu/animated-menu.js",
+		"/C/Users/leiyuming/Desktop/animated-menu/animated-menu/js/jquery.easing.1.3.js",
+		"/C/Users/leiyuming/Desktop/MergingImageBoxes/index.html",
+		"/D/Projects/SuperFlash/src/ui/barchart.qs",
+		"/D/Projects/qt_projects/qt-labs-graphics-dojo/barchart/barchart.qs",
+		"/D/Projects/SuperFlash/src/ui/CenterView/FlashPage/FlashPage.js",
+		"/D/Projects/SuperFlash/src/ui/CenterView/MainPage/MainPage.qml",
+		"/D/Projects/SuperFlash/src/ui/CenterView/TabButton.qml",
+		"/D/Projects/SuperFlash/src/ui/CenterView/MainPage/DevicePage.qml",
+		"/D/Projects/SuperFlash/src/ui/MainWindow.qml",
+		"/D/Projects/SuperFlash/src/ui/MainWindow.js",
+		"/D/Projects/SuperFlash/src/ui/script/FlashManControl.js",
+		"/D/Projects/SuperFlash/src/ui/CenterView/MainPage/MainPage.js",
+		"/D/Projects/SuperFlash/src/ui/script/Global.js",
+		"/D/Projects/SuperFlash/src/ui/CenterView/ToolPage/ToolPanel.js",
+		"/D/Projects/SuperFlash/src/ui/CenterView/ToolPage/Root.qml",
+		"/D/Projects/SuperFlash/src/ui/script/FlashCoreControl.js",
+		"/D/Projects/SuperFlash/src/ui/test.qml",
+		"/D/Projects/SuperFlash/src/ui/CenterView/ToolPage/Root.js",
+		"/D/Projects/SuperFlash/src/ui/flashui.sublime-workspace",
+		"/D/Projects/SuperFlash/src/ui/script/CloudServiceControl.js",
+		"/D/Projects/SuperFlash/src/ui/CenterView/CenterView.js",
+		"/D/Projects/SuperFlash/src/ui/CenterView/MainPage/DevicePage.js",
+		"/D/Projects/SuperFlash/src/ui/CenterView/CenterView.qml",
+		"/D/Projects/SuperFlash/src/ui/dialog/ConnectCloudServiceFailed.qml",
+		"/D/Projects/SuperFlash/src/ui/script/MessageControl.js",
+		"/D/Projects/SuperFlash/src/ui/script/FlashMan.js",
+		"/D/Qt/5.0.0/5.0.0/msvc2010/qml/QtGraphicalEffects/ColorOverlay.qml",
+		"/D/Projects/SuperFlash/src/ui/dialog/ConflictApplication.qml",
+		"/D/Projects/SuperFlash/src/ui/CenterView/ToolPage/ToolPage.qml",
+		"/D/Projects/SuperFlash/src/ui/CenterView/ToolPage/ToolPanel.qml",
+		"/D/Projects/SuperFlash/src/ui/CenterView/ToolPage/BackupData.qml",
+		"/D/Projects/SuperFlash/src/ui/CenterView/ToolPage/RestoreData.qml",
+		"/D/Qt/5.0.0-rc2/5.0.0-rc2/msvc2010/imports/Qt/labs/folderlistmodel/qmldir",
+		"/D/Projects/SuperFlash - 副本 (2)/src/flashcore.cpp",
+		"/D/Projects/SuperFlash/src/ui/CenterView/FlashPage/FlashPage.qml",
+		"/D/Projects/SuperFlash/src/ui/FlashUi.qml",
+		"/D/Projects/SuperFlash/src/ui/dialog/InputPassword.qml",
+		"/D/Projects/SuperFlash/src/ui/dialog/MismatchingRom.qml",
+		"/D/Projects/SuperFlash/src/ui/MainMenu.qml",
+		"/D/Projects/SuperFlash/src/ui/script/BaseControl.js",
+		"/D/Projects/SuperFlash/src/ui/Style.js",
+		"/D/Projects/SuperFlash/src/ui/StatusBar.qml",
+		"/D/Projects/SuperFlash/src/ui/CenterView/ToolPage/RemoveRoot.qml",
+		"/D/Projects/SuperFlash/src/ui/CenterView/RomPage/RomMarket.qml",
+		"/D/Projects/SuperFlash/src/ui/CenterView/RomPage/RomManager.qml",
+		"/D/Projects/SuperFlash/src/ui/CenterView/RepairPage/VendorView.qml",
+		"/D/Projects/SuperFlash/src/ui/CenterView/RepairPage/VendorDeviceTypeView.qml",
+		"/D/Projects/SuperFlash/src/ui/CenterView/RepairPage/SelectDeviceTypeView.qml",
+		"/D/Projects/SuperFlash/src/ui/CenterView/RepairPage/RepairPrepare.qml",
+		"/D/Projects/SuperFlash/src/ui/CenterView/RepairPage/RepairPageBanner.qml",
+		"/D/Projects/SuperFlash/src/ui/CenterView/RepairPage/Repairing.qml",
+		"/D/Projects/SuperFlash/src/ui/CenterView/RepairPage/RepairFinished.qml",
+		"/D/Projects/SuperFlash/src/ui/CenterView/RepairPage/RepairDownload.qml",
+		"/D/Projects/SuperFlash/src/ui/CenterView/MainPage/RecommendList.qml",
+		"/D/Projects/SuperFlash/src/ui/CenterView/MainPage/DriverFinished.qml",
+		"/D/Projects/SuperFlash/src/ui/CenterView/MainPage/DriverDisconnect.qml",
+		"/D/Projects/SuperFlash/src/ui/CenterView/FlashPage/SystemRestoring.qml",
+		"/D/Projects/SuperFlash/src/ui/CenterView/FlashPage/SystemRestore.qml",
+		"/D/Projects/SuperFlash/src/ui/CenterView/FlashPage/SystemDatabaseOption.qml",
+		"/D/Projects/SuperFlash/src/ui/CenterView/FlashPage/SystemBackupSetting.qml",
+		"/D/Projects/SuperFlash/src/ui/CenterView/FlashPage/SelectRomView.qml",
+		"/D/Projects/SuperFlash/src/ui/CenterView/FlashPage/FlashPageBanner.qml",
+		"/D/Projects/SuperFlash/src/ui/CenterView/FlashPage/FlashingMessage.qml",
+		"/D/Projects/SuperFlash/src/ui/CenterView/FlashPage/Flashing.qml",
+		"/D/Projects/SuperFlash/src/ui/CenterView/FlashPage/FlashFinished.qml",
+		"/D/Projects/SuperFlash/src/ui/CenterView/FlashPage/FlashFailed.qml",
+		"/D/Projects/SuperFlash/src/ui/CenterView/FlashPage/DownloadFlashRom.qml",
+		"/D/Projects/SuperFlash/src/ui/test2.qml",
+		"/D/Projects/SuperFlash/src/ui/test.js",
+		"/D/Projects/Weiqi/Config.js",
+		"/D/Projects/Components/comonents-helper",
+		"/D/Projects/SuperFlash/src/ui/script/EventDispatcher.js",
+		"/D/Projects/SuperFlash/src/ui/script/MainMenuControl.js",
+		"/D/Projects/SuperFlash/src/ui/script/DevManControl.js",
+		"/D/Projects/SuperFlash/src/ui/scripts/BaseControl.js",
+		"/D/Projects/SuperFlash/src/ui/scripts/MainMenuControl.js",
+		"/D/Projects/SuperFlash/src/ui/scripts/FlashManControl.js",
+		"/D/Projects/SuperFlash/src/ui/scripts/DevManControl.js",
+		"/D/Projects/SuperFlash/src/ui/scripts/EventDispatcher.js",
+		"/D/Projects/SuperFlash/src/ui/FlashUi.qmlproject.user",
+		"/D/Projects/SuperFlash/src/ui/thread.js",
+		"/D/Projects/FlashUi/ui/scripts/FlashManControl.js",
+		"/D/Projects/FlashUi/ui/CenterView/MainPage/RecommendList.qml",
+		"/D/Projects/FlashUi/ui/CenterView/MainPage/DevicePage.qml",
+		"/D/Projects/FlashUi/ui/CenterView/FlashPage/DownloadFlashRom.qml",
+		"/D/Projects/FlashUi/ui/CenterView/FlashPage/FlashFinished.qml",
+		"/D/Projects/FlashUi/ui/CenterView/FlashPage/Flashing.qml",
+		"/D/Projects/FlashUi/ui/CenterView/FlashPage/FlashPage.js",
+		"/D/Projects/FlashUi/ui/CenterView/FlashPage/SelectRomView.qml",
+		"/D/Projects/FlashUi/ui/CenterView/FlashPage/SystemBackupSetting.qml",
+		"/D/Projects/FlashUi/ui/CenterView/FlashPage/SystemRestoring.qml",
+		"/D/Projects/FlashUi/ui/CenterView/MainPage/Driver.qml",
+		"/D/Projects/FlashUi/ui/CenterView/MainPage/DriverDisconnect.qml",
+		"/D/Projects/FlashUi/ui/CenterView/RepairPage/RepairDownload.qml",
+		"/D/Projects/FlashUi/ui/CenterView/RepairPage/Repairing.qml",
+		"/D/Projects/FlashUi/ui/CenterView/RepairPage/RepairPrepare.qml",
+		"/D/Projects/FlashUi/ui/CenterView/RepairPage/VendorDeviceTypeView.qml",
+		"/D/Projects/FlashUi/ui/CenterView/MainPage/MainPage.qml",
+		"/D/Projects/FlashUi/ui/CenterView/RomPage/RomMarket.qml",
+		"/D/Projects/FlashUi/ui/CenterView/ToolPage/ToolPanel.js",
+		"/D/Projects/FlashUi/ui/CenterView/ToolPage/RestoreData.qml",
+		"/D/Projects/FlashUi/ui/CenterView/ToolPage/BackupData.qml",
+		"/D/Projects/FlashUi/ui/CenterView/ToolPage/RemoveRoot.qml",
+		"/D/Projects/FlashUi/ui/CenterView/ToolPage/Root.qml",
+		"/D/Projects/FlashUi/ui/CenterView/ToolPage/ToolPanel.qml",
+		"/D/Projects/FlashUi/ui/CenterView/ToolPage/ToolPage.qml",
+		"/D/Projects/SuperFlash/src/main.cpp",
+		"/D/Projects/FlashUi/ui/CenterView/RomPage/RomPage.js"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"jQuery",
+			"jQuery.init",
+			"$",
+			"_$",
+			"inputpassword",
+			"getLocalRomList",
+			"initView",
+			"infomation.",
+			"RemoveRoot",
+			"initView",
+			"infomation",
+			"image_phone_screen",
+			"Util.log",
+			"format",
+			"\n};",
+			"FlashManControl.js",
+			"showDevicePage",
+			"CloudServiceControl",
+			"js",
+			"FlashMan",
+			"FlashManControl",
+			"initDeviceInfo",
+			"flashman",
+			"toolPage",
+			"toolpage",
+			".toolpage",
+			"toolpage",
+			"flashcore",
+			"eventloop",
+			"conflictapplication",
+			"components.style",
+			"qsTr(\"微软雅黑\")",
+			"微软雅黑",
+			"centerview",
+			"mainMenuControl",
+			"Util.log",
+			"QtQuick 1.0",
+			"file:",
+			"rootview",
+			"button_root",
+			"flashpagebanner",
+			"TabView",
+			"maintabview",
+			"restore",
+			"ScrollArea",
+			"deviceTypeView",
+			"ScrollArea",
+			"itemCreator",
+			"item_container",
+			"message_area",
+			"flashpagebanner",
+			"systembackupoption",
+			"systembackupsetting",
+			"flashingmessage",
+			"qq",
+			"url",
+			"flashfinished",
+			"steelblue",
+			"private",
+			"hist",
+			"call",
+			",",
+			"Core",
+			"\"微软雅黑\"",
+			"tabview",
+			"listview_recommend",
+			"Link",
+			"	",
+			"/",
+			"temp",
+			"shutil",
+			"18638902323",
+			"13810285044",
+			"showWindow",
+			"window",
+			"mainwindow",
+			".JPG",
+			"Media/DCIM",
+			"sms",
+			".db",
+			"\"",
+			"icon",
+			"theSource",
+			"200",
+			"Line",
+			"Util.getTopParentWidget(mainwindow)",
+			"300",
+			"button.backgroundColor_pressed",
+			"button.backgroundColor_normal",
+			"button.backgroundColor_hover",
+			"button_background",
+			"	",
+			"NOTE",
+			"isMaximize",
+			"highlight",
+			"    @property",
+			"//****",
+			"//********************************************************************************",
+			"\"transparent\"",
+			"button_",
+			"./image",
+			"button_min",
+			"button_min_background",
+			"buttonFlag",
+			"button",
+			"bool",
+			"function",
+			"imiport",
+			"beginCaptures",
+			"end",
+			"?=",
+			"end",
+			"const",
+			"?={",
+			"{",
+			"Control",
+			"Keyword",
+			"d",
+			"3342",
+			"wra",
+			"background",
+			"backround",
+			"theme",
+			"sha1",
+			"Highlighter",
+			"FZZhunYuan-M02",
+			"invokeMethod"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"parameter.infomation.",
+			"FlashManControl",
+			"FlashMan",
+			"components.style.font.family",
+			"removerootview",
+			"banner",
+			"romtabview",
+			"repair",
+			"vendorview",
+			"vendordevicetypeview",
+			"restorepagepagebanner ",
+			"flashfailed\n ",
+			"flashingmessage\n ",
+			"\n ",
+			"qsTr(\"微软雅黑\")",
+			"maintabview",
+			"column_recommend",
+			"    ",
+			"dialog",
+			"window",
+			"\\\"",
+			"250",
+			"Core.applicationWindow",
+			"200",
+			"\"lightgray\"",
+			"\"#e3e3e3\"",
+			"\"white\"",
+			"    ",
+			"//********",
+			"//****",
+			"button.backgroundColor_normal",
+			"../image",
+			"button",
+			"button_background",
+			"controlFlag",
+			"3242",
+			"微软雅黑"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/D/Project/Weiqi/ChequerMoudle.js",
+					"settings":
+					{
+						"buffer_size": 7482,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								304,
+								304
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3480.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/D/Project/Weiqi/Indicator.qml",
+					"settings":
+					{
+						"buffer_size": 70,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								69,
+								69
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/QML/QML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/D/Project/Weiqi/ChessBoard.qml",
+					"settings":
+					{
+						"buffer_size": 2064,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1455,
+								1455
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/QML/QML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1020.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.exec":
+	{
+		"height": 114.0
+	},
+	"replace":
+	{
+		"height": 74.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"flashp",
+				"ui/CenterView/FlashPage/FlashPage.qml"
+			],
+			[
+				"recom",
+				"ui/CenterView/MainPage/RecommendList.qml"
+			],
+			[
+				"mainwindow.cpp",
+				"UiViewer/MainWindow.cpp"
+			],
+			[
+				"uic",
+				"UiViewer/UiMoveControl.cpp"
+			],
+			[
+				"mainw",
+				"MainWindow.qml"
+			],
+			[
+				"cen",
+				"CenterView/CenterView.qml"
+			],
+			[
+				"main",
+				"MainMenu.qml"
+			],
+			[
+				"ce",
+				"CenterView/CenterView.qml"
+			],
+			[
+				"ma",
+				"MainWindow.qml"
+			],
+			[
+				"tab",
+				"CenterView/TabButton.qml"
+			],
+			[
+				"center",
+				"CenterView/CenterView.qml"
+			],
+			[
+				"super",
+				"SuperFlash/superflash.pro"
+			],
+			[
+				"qml/d",
+				"qml/Desktop.qml"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 243.0,
+	"status_bar_visible": true
+}

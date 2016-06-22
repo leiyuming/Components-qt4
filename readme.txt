@@ -1,0 +1,2 @@
+把解压后的Componts文件夹放Qt安装目录下的impots里面
+然后其余的qml文件用qmlviewer打开就可以预览了

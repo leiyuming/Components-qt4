@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>FrameAnimation参考文档</title>
+<link href="style/base.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="header">
+		<p>Components 参考文档</p>
+	</div>
+	<div id="body">
+		<p class="title">FrameAnimation控件</p>
+		<p>FrameAnimation控件能动画显示一个图片组。<a href="#detial">查看详细</a></p>
+      <p>继承自Image。</p>        
+		<p><a name="property" class="subject">属性</a></p>
+		<ul>
+		  <li><a class="property" href="#url">url</a> : string</li>
+		  <li><a class="property" href="#fileType">fileType</a> : string</li>
+		  <li><a class="property" href="#frameCount">frameCount</a> : int</li>
+		  <li><a class="property" href="#index">index</a> : int</li>
+		  <li><a class="property" href="#timer">timer</a> : Timer</li>
+      </ul>
+		<p><a name="signals" class="subject">信号</a></p>
+	  <p>参见QML  Image Element</p>
+		<p><a name="methods" class="subject">方法</a></p>
+		<p>参见QML  Image Element</p>
+	  <p><a name="detail" class="subject">详细说明</a></p>
+		<p>FrameAnimation控件提供了一个帧动画的解决方案，你只需要将你的图片序列编好号就实现帧动画了。</p>
+	  <p>这样可以避免使用gif图片，如果你要使用gif图片，你不得不带上三方库，这个蛋很疼。</p>
+	  <p>与此控件类似的控件还有：PartImageAnimation这个控件更快更简单，我喜欢。</p>
+		<p><a name="usage" class="subject">用法</a></p>
+        <p>下面这个例子被包含在<a href="example/ExampleFrameAnimation.qml">ExampleFrameAnimation.qml</a>:</p>
+	  <pre>FrameAnimation {
+    url: "file:ExampleFrameAnimation/connecting"
+    frameCount: 10
+    fileType: "png"
+    timer.interval: 100
+}</pre>
+<p>我们需要通过<a class="property" href="#url">url</a>设置图片组的路径以及图片组的名字，路径用“file:路径/图片组名“这样的方法写明。</p>
+<p>对于图片组，我们需要手动将图片组里的图片按照”图片组名“ + ”序号“的方式进行命名，序号从”1“开始。</p>
+<p>为了让控件能够正常工作，我们需要设置图片组的格式，也就是图片文件的后缀名。</p>
+		<p><a name="property_document" class="subject">属性文档</a></p>
+	  <p class="property"><a class="property" name="url">url</a> : string
+      <p>这个属性用于设置图片组的路径以及图片组的名字。</p>
+      <p>路径用“file:路径/图片组名“这样的方法写明。</p>
+        </p>
+	  <p class="property"><a class="property" name="fileType">fileType</a> : string
+      <p>这个属性设置图片组的图片格式，与图片组内图片文件后缀名一样。<a class="property" href="#cursor"></a>      </p>
+        <p class="property"><a class="property" name="frameCount">frameCount</a> : int
+      <p>这个属性描述图片组的图片个数。</p>
+      <p>这个值不能大于图片组内图片的个数，可以小于或者是等于图片组内图片的个数。</p>
+        </p>
+		<p class="property"><a class="property" name="index">index</a> : int
+        <p>这个属性指示当前帧。</p>
+	  <p class="property"><a class="property" name="timer">timer</a> : Timer
+      <p>通过这个属性，我们可以控制帧动画的速率，是否循环播放等状态。</p>
+      <p>具体使用方法参加QML Timer Element。</p>
+</div>
+<div id="footer">
+<p>Made by lei</p>
+</div>
+</body>
+</html>

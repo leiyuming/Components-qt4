@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>LineEdit 参考文档</title>
+<link href="style/base.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="header">
+		<p>Components 参考文档</p>
+	</div>
+	<div id="body">
+	  <p class="title">LineEdit控件</p>
+	  <p> <span class="title">LineEdit</span>控件提供单行文本输入。<a href="#detial">查看详细</a></p>
+      <p>继承自Item。</p>        
+	  <p><a name="property" class="subject">属性</a></p>
+		<ul>
+		  <li><a class="property" href="#background">background</a> : Loader</li>
+		  <li><a class="property" href="#message">message</a> : Text</li>
+		  <li><a class="property" href="#content">content</a> : TextInput</li>
+     </ul>
+		<p><a name="signals" class="subject">信号</a></p>
+      <ul>
+		  <li><a class="property" href="#onTextChanged">onTextChanged</a>(string text) </li>
+		  <li><a class="property" href="#onAccepted">onAccepted</a>(string text)</li>
+      </ul>
+	  <p><a name="methods" class="subject">方法</a></p>
+		<p>参见QML  Item Element</p>
+	  <p><a name="detail" class="subject">详细说明</a></p>
+		<p><span class="title">LineEdit</span>提供单行文本输入框，默认有一套样式。</p>
+		<p>我们很多时候需要用到文本输入，但是用QML原生提供的TextInput，我们不得不为其写一些背景和其他控制元素，每次都写的话会觉得繁琐，LineEdit提供了一个默认的解决方案，并且可以灵活定制。</p>
+	  <p><a name="usage" class="subject">用法</a></p>
+        <p>下面这个例子被包含在<a href="example/ExampleLineEdit.qml">Example<span class="title">LineEdit</span>.qml</a>:</p>
+	  <pre>LineEdit {
+    width: 300; height: 30
+    anchors.centerIn: parent
+    message {
+        text: qsTr("请在这里输入内容")
+        color: "yellow"
+    }
+    // background.sourceComponent: Rectangle { color: "dimgray" }
+}</pre>
+<p><a name="property_document" class="subject">属性文档</a></p>
+	  <p class="property"><a class="property" name="background">background</a> : Loader
+      <p>这个属性用于控制输入框的背景。</p>
+      <p>使用方法参见QML Loader Element。</p>
+	  <p class="property"><a class="property" name="message">message</a> : Text
+      <p>这个属性用于显示输入框的提示信息。</p>
+      <p>使用方法参见QML Text Element。</p>
+	  <p class="property"><a class="property" name="content">content</a> : TextInput
+      <p>这个属性用于控制输入文本。</p>
+      <p>使用方法参见QML TextInput Element。</p>
+      <p><a name="property_document" class="subject">信号文档</a></p>
+	  <p class="property">LineEdit::<a class="property" name="onTextChanged">onTextChanged </a>(string text)
+      <p>当输入框文本内容改变的时候会触发此信号。</p>
+	  <p class="property">LineEdit::<a class="property" name="onAccepted">onAccepted </a>(string text)
+      <p>在输入框内按下回车键时触发此信号。</p>
+</div>
+<div id="footer">
+<p>Made by lei</p>
+</div>
+</body>
+</html>

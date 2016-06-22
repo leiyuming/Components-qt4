@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ScrollArea参考文档</title>
+<link href="style/base.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="header">
+		<p>Components 参考文档</p>
+	</div>
+<div id="body">
+  <p class="title">ScrollArea控件</p>
+		<p> ScrollArea控件提供一个滚动区域  。<a href="#detial">查看详细</a></p>
+      <p>继承自Item。</p>        
+  <p><a name="property" class="subject">属性</a></p>
+		<ul>
+		  <li><a class="property" href="#controlArea">controlArea</a> : Flickable</li>
+		  <li><a class="property" href="#centerview">centerview</a> : Item</li>
+		  <li><a class="property" href="#horizontalBar">horizontalBar</a> : ScrollBar</li>
+		  <li><a class="property" href="#verticalBar">verticalBar</a> : ScrollBar</li>
+		  <li><a class="property" href="#innerScroll">innerScroll</a> : bool</li>
+		  <li><a class="property" href="#horizontalBarPolicy">horizontalBarPolicy</a> : string</li>
+		  <li><a class="property" href="#verticalBarPolicy">verticalBarPolicy</a> : string</li>
+	  </ul>
+	  <p><a name="signals" class="subject">信号</a></p>
+	  <p>参见  QML  Item Element</p>
+		<p><a name="methods" class="subject">方法</a></p>
+		<p>参见  QML  Item Element</p>
+	  <p><a name="detail" class="subject">详细说明</a></p>
+		<p>Rating提供一个评分显示和修改的能力。</p>
+  <p>网上有很多资源都可以对其进行打分，此控件便是模仿哪些打分控件做的，比较容易自定义。</p>
+  <p><a name="usage" class="subject">用法</a></p>
+        <p>下面这个例子被包含在<a href="example/ExampleScrollArea.qml">ExampleScrollArea.qml</a>:</p>
+  <pre>ScrollArea {
+    id: scrollarea
+    width: 200; height: 200
+    innerScroll: false
+    Rectangle {
+        width: 300; height: 400
+        gradient: Gradient {
+            GradientStop { position: 0.0; color: "lightsteelblue" }
+            GradientStop { position: 1.0; color: "blue" }
+        }
+    }
+}</pre>
+<p>当然，我们也可以很容易的自定义滚动条的样式，比如我们可以这样做：</p>
+<p>verticalBar.background.sourceComponent: Rectangle { color: &quot;black&quot; }<br />
+verticalBar.indicator.sourceComponent: Rectangle { color: &quot;blue&quot; }</p>
+<p>ScrollBar的使用方法，参见ScrollBar控件。</p>
+<p><a name="property_document" class="subject">属性文档</a></p>
+		<p class="property"><a class="property" name="controlArea">controlArea</a> : Flickable
+  <p>参见QML Filckable Element。</p>
+        </p>
+  <p class="property"><a class="property" name="centerview">centerview</a> : Item
+  <p>ScrollAreak控件会根据<a class="property" href="#centerview">centerview</a>的大小自动控制滚动条的动作。 </p>
+    <p class="property"><a class="property" name="horizontalBar">horizontalBar</a> : ScrollBar
+  <p>这个属性控制水平滚动条的动作。</p>
+  <p>参见ScrollBar。</p>
+        </p>
+		<p class="property"><a class="property" name="verticalBar">verticalBar</a> : ScrollBar
+  <p>这个属性控制垂直滚动条的动作。</p>
+  <p>参见ScrollBar。</p>
+		<p class="property"><a class="property" name="innerScroll">innerScroll</a> : bool
+		<p>这个属性控制滚动条是在滚动区域内部，还是在滚动区域外部。默认值为true。</p>
+  <p>true表示滚动条在滚动区域内部，如果滚动条在滚动区域内部，则默认不显示滚动条，只有在内容滚动的时候才显示。</p>
+		<p class="property"><a class="property" name="horizontalBarPolicy">horizontalBarPolicy</a> : string
+	  <p>这个属性控制水平滚动条的显示是自动，总是显示，还是不显示。</p>
+	  <p>可能取值为&quot;auto&quot;, &quot;always&quot;, &quot;never&quot;，默认值为&quot;auto&quot;。</p>
+	  <p>注意：这个属性在<a class="property" href="#innerScroll">innerScroll</a>值为false时有效。</p>
+		<p class="property"><a class="property" name="verticalBarPolicy">verticalBarPolicy</a> : string
+	  <p>这个属性控制水平滚动条的显示是自动，总是显示，还是不显示。</p>
+	  <p>可能取值为&quot;auto&quot;, &quot;always&quot;, &quot;never&quot;，默认值为&quot;auto&quot;。</p>
+	  <p>注意：这个属性在<a class="property" href="#innerScroll">innerScroll</a>值为false时有效。</p>
+</div>
+	<div id="footer">
+    <p>Made by lei</p>
+</div>
+</body>
+</html>

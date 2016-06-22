@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DropArea 参考文档</title>
+<link href="style/base.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="header">
+		<p>Components 参考文档</p>
+	</div>
+<div id="body">
+  <p class="title">DropArea控件</p>
+		<p>DropArea控件提供一个接受鼠标的拖拽区域。<a href="#detial">查看详细</a></p>
+      <p>继承自Item。</p>        
+  <p><a name="property" class="subject">属性</a></p>
+		<ul>
+		  <li><a class="property" href="#acceptingDrops">acceptingDrops</a> : bool</li>
+     </ul>
+  <p><a name="signals" class="subject">信号</a></p>
+      <ul>
+		  <li><a class="property" href="#onEnter">onEnter</a>() </li>
+		  <li><a class="property" href="#onLeave">onLeave</a>() </li>
+		  <li><a class="property" href="#onDrop">onDrop</a>(variant mimeData) </li>
+		  <li><a class="property" href="#onAcceptingDropsChanged">onAcceptingDropsChanged</a>() </li>
+      </ul>		
+  <p><a name="methods" class="subject">方法</a></p>
+		<p>参见QML  Item Element</p>
+  <p><a name="detail" class="subject">详细说明</a></p>
+		<p>DropArea控件提供一个接受鼠标的拖拽区域。</p>
+	  <p><a name="usage" class="subject">用法</a></p>
+  <p>不想写了。</p>
+<p><a name="property_document" class="subject">属性文档</a></p>
+  <p class="property"><a class="property" name="acceptingDrops">acceptingDrops</a> : bool
+  <p>这个属性控制，是否接收拖拽事件。</p>
+  <p class="property"><a class="property" name="enableDesktopService">enableDesktopService</a> : bool
+  <p>这个属性用于控制是否是使用操作系统默认方式打开链接，默认值为true。</p>
+  <p>如果值为false，将不会做任何处理。</p>
+  <p class="property"><a class="property" name="mouse">mouse</a> : MouseArea
+  <p>这个属性的目的是用于显示的文本样式控制。</p>
+  <p>比如：color: mouse.containsMouse ? &quot;blue&quot; : &quot;black&quot;</p>
+  <p><a name="property_document" class="subject">信号文档</a></p>
+  <p class="property">Link::<a class="property" href="#onEnter">onEnter</a>() </p>
+  <p>当鼠标拖拽进入DropArea时触发此信号。</p>
+  <p class="property">Link::<a class="property" href="#onLeave">onLeave</a>() </p>
+  <p>当鼠标拖拽离开DropArea时触发此信号。</p>
+  <p class="property">Link::<a class="property" href="#onDrop">onDrop</a>(variant mimeData) </p>
+  <p>当鼠标拖拽进入DropArea并释放时触发此信号。</p>
+  <p>mimeData记录当前拖拽的路径信息，结构是个stringlist。</p>
+  <p class="property">Link::<a class="property" href="#onAcceptingDropsChanged">onAcceptingDropsChanged</a>() </p>
+  <p>属性acceptingDrops变化时触发。</p>
+</div>
+<div id="footer">
+<p>Made by lei</p>
+</div>
+</body>
+</html>

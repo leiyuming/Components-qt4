@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Link 参考文档</title>
+<link href="style/base.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="header">
+		<p>Components 参考文档</p>
+	</div>
+<div id="body">
+  <p class="title">Link控件</p>
+		<p>Link控件提供类似超链接功能，也可以看成是文本按钮。<a href="#detial">查看详细</a></p>
+      <p>继承自Text。</p>        
+	  <p><a name="property" class="subject">属性</a></p>
+		<ul>
+		  <li><a class="property" href="#url">url</a> : string</li>
+		  <li><a class="property" href="#enableDesktopService">enableDesktopService</a> : bool</li>
+		  <li><a class="property" href="#mouse">mouse</a> : MouseArea</li>
+     </ul>
+  <p><a name="signals" class="subject">信号</a></p>
+      <ul>
+		  <li><a class="property" href="#onClicked">onClicked</a>(string url) </li>
+      </ul>		
+      <p><a name="methods" class="subject">方法</a></p>
+		<p>参见QML  Text Element</p>
+  <p><a name="detail" class="subject">详细说明</a></p>
+		<p><span class="title">Link</span>控件提供类似超链接功能，也可以看成是文本按钮。</p>
+	  <p><a name="usage" class="subject">用法</a></p>
+  <p>下面这个例子被包含在<a href="example/ExampleLink.qml">ExampleLink.qml</a>:</p>
+	  <pre>Link {
+    url: "http://www.baidu.com"
+    text: qsTr(&quot;百度&quot;)
+}</pre>
+<p><a name="property_document" class="subject">属性文档</a></p>
+  <p class="property"><a class="property" name="url">url</a> : string
+  <p>这个属性用于保存链接地址。</p>
+  <p class="property"><a class="property" name="enableDesktopService">enableDesktopService</a> : bool
+	  <p>这个属性用于控制是否是使用操作系统默认方式打开链接，默认值为true。</p>
+  <p>如果值为false，将不会做任何处理。</p>
+  <p class="property"><a class="property" name="mouse">mouse</a> : MouseArea
+  <p>这个属性的目的是用于显示的文本样式控制。</p>
+  <p>比如：color: mouse.containsMouse ? &quot;blue&quot; : &quot;black&quot;</p>
+  <p><a name="property_document" class="subject">信号文档</a></p>
+  <p class="property">Link::<a class="property" href="#onClicked">onClicked</a>(string url) </p>
+  <p>当鼠标点击链接时触发此信号。</p>
+</div>
+<div id="footer">
+<p>Made by lei</p>
+</div>
+</body>
+</html>

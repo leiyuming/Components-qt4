@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Components组件 帮助</title>
+<link href="style/base.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="header">
+<p>Components 参考文档</p>
+</div>
+<div id="body">
+<p>Components组件包含的控件和方法，已经可以满足绝大部分程序的需求。简单的在QML文件中使用“import Components 1.0”就能做到对基本所有的窗口元素进行定制；除此之外，Components内部提供了对话框，弹出窗口，弹出菜单，以及ToolTip的功能，极大的简化了自定义对话框，窗口的写作过程，并提供了一个简单通信方式，现在基本可以完全通过QML脚本来完成复杂窗口的创建和自定义，非常简单。</p>
+<p>在设计Components的时候考虑了比较多的因素，比如控件的自定义，样式控制，与主程序的通信，窗口基本属性控制，多语言问题，并且都提供了相关的解决方法。</p>
+<p>写此参考文档的目的主要是为了和同类交流，提高Components的质量，顺便说明各个控件的使用方法。</p>
+<p>每个控件的参考文档，我尽量都写一到两个例子来帮助大家理解，在文档中，我将弹出窗口，弹出菜单等内容做一个专题来跟大家交流。（以后有时间再完善，累啊累的）</p>
+<p><span class="subject"><a href="Manual.html">Components</a></span><a href="Manual.html">使用说明：传送门</a></p>
+<p class="subject">Components组件提供的内容主要包括以下几个方面：</p>
+<ol>
+  <li>由原生QML语法写成的基本控件</li>
+  <li>由C++提供的扩展控件，主要是解决目前原生QML元素无法提供的功能</li>
+  <li>运行时对象（qApp，window，Util，components）</li>
+</ol>
+<p class="subject">Components基本控件</p>
+<ul>
+  <li><a href="Button.html">Button</a> - 按钮，提供一些基本功能，比如鼠标指针改变，提示信息</li>
+  <li><a href="CheckBox.html">CheckBox</a> - 复选框按钮</li>
+  <li>Frame - 图形层（额...不是很有用）</li>
+  <li><a href="FrameAnimation.html">FrameAnimation</a> - 帧动画，游戏里用得比较多</li>
+  <li><a href="IndicatorCircle.html">IndicatorCircle</a> - 圆形指示器</li>
+  <li><a href="IndicatorImage.html">IndicatorImage</a> - 图片指示器（额...跟圆形的效果类似）</li>
+  <li><a href="IndicatorLine.html">IndicatorLine</a> - 线性指示器（参考Win8做的）</li>
+  <li><a href="Line.html">Line</a> - 线</li>
+  <li><a href="LineEdit.html">LineEdit</a> - 输入框</li>
+  <li><a href="Link.html">Link</a> - 超链接</li>
+  <li>PartImage - 图片局部显示控件（不建议使用，这个主要是提供給PartImageAnimation使用的）</li>
+  <li><a href="PartImageAnimation.html">PartImageAnimation</a> - 帧动画</li>
+  <li><a href="ProgressBar.html">ProgressBar</a> - 进度条</li>
+  <li><a href="RadioButton.html">RadioButton</a> - 单选按钮</li>
+  <li><a href="RadioGroup.html">RadioGroup</a> - 单选按钮组</li>
+  <li><a href="Rating.html">Rating</a> - 等级评定控件</li>
+  <li><a href="ScrollArea.html">ScrollArea</a> - 滚动区域</li>
+  <li><a href="ScrollBar.html">ScrollBar</a> - 滚动条</li>
+  <li><a href="ScrollText.html">ScrollText</a> - 滚动文字</li>
+  <li>Selector - 选择指示器</li>
+  <li><a href="SizeGrip.html">SizeGrip</a> - 控件大小控制器</li>
+  <li><a href="Slider.html">Slider</a> - 滑动器</li>
+  <li><a href="Spliter.html">Spliter</a> - 分割线控制器</li>
+  <li><a href="Switcher.html">Switcher</a> - 开关按钮</li>
+  <li><a href="Window.html">Window</a> - 窗口</li>
+  <li><a href="ToolBoxItem.html">ToolBoxItem</a> - 工具箱项</li>
+</ul>
+<p class="subject">Components容器控件</p>
+<ul>
+  <li><a href="Banner.html">Banner</a> - 横幅控制容器</li>
+  <li><a href="ChainedView.html">ChainedView</a> - 链式视图控制器</li>
+  <li>GroupBox - 组</li>
+  <li><a href="StackView.html">StackView</a> - 栈视图控制器</li>
+  <li><a href="TabView.html">TabView</a> - 标签控制器</li>
+  <li><a href="ToolBox.html">ToolBox</a> - 工具箱</li>
+</ul>
+<p class="subject">Components扩展控件</p>
+<ul>
+  <li><a href="CursorArea.html">CursorArea</a> - 鼠标手势控制</li>
+  <li><a href="DropArea.html">DropArea</a> - 拖放控制</li>
+  <li><a href="EventLoop.html">EventLoop</a> - 消息循环控制</li>
+  <li><a href="BlurEffect.html">BlurEffect</a> - 模糊特效</li>
+  <li><a href="ColorizeEffect.html">ColorizeEffect</a> - 色彩特效</li>
+  <li><a href="DropShadowEffect.html">DropShadowEffect</a> - 阴影特效</li>
+  <li>OpacityEffect - 透明特效</li>
+  <li><a href="Pixmap.html">Pixmap</a> - 二进制图片</li>
+  <li><a href="Settings.html">Settings</a> - 配置文件读写</li>
+  <li><a href="WheelArea.html">WheelArea</a> - 鼠标滚轮控制</li>
+</ul>
+<p class="subject">Components运行时对象</p>
+<ul>
+  <li><a href="Util.html">Util</a> - 提供各种实用功能</li>
+  <li><a href="qApp.html">qApp</a> - 全局QApplication对象</li>
+  <li>components - Components全局存储对象（为解决style写的）</li>
+  <li>invoker - 方法调用器，可做全局通信</li>
+  <li>window - 运行时窗口对象</li>
+</ul>
+
+</div>
+<div id="footer">
+<p>Made by lei</p>
+</div>
+</body>
+</html>

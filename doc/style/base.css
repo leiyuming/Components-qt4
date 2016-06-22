@@ -1,0 +1,58 @@
+* {
+	font-family:"微软雅黑";
+	font-size: 14px;
+}
+#header{
+	background:#f2f2f2;
+	color:darkgreen;
+	height: 60px;
+}
+#header p {
+	font-size:20px;
+	position: relative;
+	left: 10px;
+	top: 30%;
+}
+#footer{
+	background:#f2f2f2;
+	color:darkgreen;
+	height: 60px;
+}
+#footer p {
+	font-size:20px;
+	position: relative;
+	left: 10px;
+	top: 30%;
+}
+p.title {
+	font-size:16px;
+	font-weight: bold;
+}
+p.subject {
+	color: darkred;
+	font-size:16px;
+	margin: 10px;
+	padding: 5px;
+	border-bottom: 1px solid dimgray;
+}
+p.property {
+	background:#f2f2f2;
+}
+a.subject {
+	color: darkblue;
+	font-size: 14px;
+	font-weight: bold;
+}
+a.property {
+	color: green;
+	text-decoration:none;
+}
+pre {
+	font-family:"Courier New";
+	margin:10px;
+	padding:10px;
+	background:#f2f2f2;
+	border: 1px solid gray;
+	border-radius: 5px;
+	font-size: 12px;
+}

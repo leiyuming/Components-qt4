@@ -1,0 +1,328 @@
+plugin Components
+//********Banner
+//inherits Item
+@property
+    int index
+    alias timer: Timer
+    bool circleMode
+@method
+    switchItem(preIndex, nextIndex)
+@signal
+    init()
+
+//********Button
+//inherits MouseArea
+@property
+    SequentialAnimation initAnimation
+    SequentialAnimation destroyAnimation
+    string __type__
+    bool enableCursor
+    string tip
+    CursorShape cursor
+@method
+    deleteLater()
+
+//********ChainedView
+//inherits Item
+@method
+    show(view, parameter)
+
+//********CheckBox
+//inherits Button
+@property
+    bool checked
+    alias title: Text
+    alias indicator: Loader
+    alias container: Row
+
+//********Frame
+//inherits Item
+@property
+    variant retrunMessage
+    SequentialAnimation initAnimation
+    SequentialAnimation closeAnimation
+@signal
+    mousePressed(int x, int y)
+    mouseMoved(int x, int y)  
+    init()                    
+    close()                   
+
+//********FrameAnimation
+//inherits Image
+@property
+    string url
+    string fileType
+    int frameCount
+    int index: 1 // 从1开始
+    alias timer: Timer
+
+//********GroupBox
+//inherits Item
+@property
+    alias titleBar: Loader
+    alias view: Item
+
+//********IndicatorCircle
+//inherits Item
+@property
+    int radius
+    int count
+    Component indicator
+
+//********IndicatorImage
+//inherits Image
+@property
+    alias animation: NumberAnimation
+
+//********IndicatorLine
+//inherits Item
+@property
+    int spacing: 5
+    int count: 7
+    Component indicator
+
+//********Line
+//inherits Item
+@property
+    int direction // Qt.Horizontal
+    variant colors: // ["transparent", "#aaffffff", "transparent"]
+
+//********LineEdit
+//inherits Item
+@property
+    alias background: Loader
+    alias message: Text
+    alias content: TextInput
+@signal
+    textChanged(string text)
+    accepted(string text)
+
+//********Link
+//inherits Text
+@property
+    string url
+    bool enableDesktopService
+    alias mouse: MouseArea
+@signal
+    clicked(string url)
+
+//********PartImage
+//inherits Item
+@property
+    alias image: Image
+    int partCount
+    int index: 0 // 从0开始
+    int direction // Qt.Vertical
+
+//********PartImageAnimation
+//inherits PartImage
+@property
+    alias timer: Timer
+
+//********ProgressBar
+//inherits Item
+@property
+    int value
+    alias background: Loader
+    alias block: Loader
+    alias highlighterContainer: Item
+    alias highlighter: Loader
+    alias title: Text
+    variant titleColors: //["white", "black"]
+
+//********RadioButton
+//inherits Button
+@property
+    bool checked
+    alias title: Text
+    alias indicator: Loader
+    alias container: Row
+
+//********RadioGroup
+//inherits QtObject
+@property
+    int index
+@method
+    add(button)
+    addList(list)
+    remove(index)
+    refresh()
+
+//********Rating
+//inherits Item
+@property
+    int total
+    int value
+    bool enableEdit
+    int spacing
+    Component background
+    Component foreground
+
+//********ScrollArea
+//inherits Item
+@property
+    alias controlArea: Flickable
+    alias horizontalBar: ScrollBar
+    string horizontalBarPolicy: "auto" // "always", "never"
+    alias verticalBar: ScrollBar
+    string verticalBarPolicy: "auto" // "always", "never"
+    bool innerScroll
+
+//********ScrollBar
+//inherits MouseArea
+@property
+    int value
+    int step
+    int direction // Qt.Horizontal
+    alias background: Loader
+    alias indicator: Loader
+    @property
+        alias mouse: MouseArea
+
+//********ScrollText
+//inherits Item
+@property
+    alias textHandle: Text
+    string text
+@method
+    showMessage(message)
+    reset()
+
+//********Selector
+//inherits Item
+@property
+    int speed
+    string color
+    int lineWidth
+
+//********SizeGrip
+//inherits Button
+@property
+    variant minimum // {"width": 10, "height": 10}
+    variant maximum // {"width": 1000, "height": 1000}
+    Component indicator
+
+//********Slider
+//inherits MouseArea
+@property
+    int minimum
+    int maximum
+    int value
+    int step
+    int direction // Qt.Horizontal
+    alias background: Loader
+    alias indicator: Loader
+    @property
+        alias mouse: MouseArea
+    alias block: Loader
+
+//********Spliter
+//inherits CursorArea
+@property
+    int direction: Qt.Horizontal
+    variant range: [0, 1000]
+@signal
+    positionChanged(int dx, int dy)
+
+//********StackView
+//inherits Item
+@property
+    int depth
+@method
+    setConfig(key, value)
+    push(view, parameter)
+    pop()
+    popIndex(index)
+    clear()
+    getView(index)
+
+//********Switcher
+//inherits Button
+@property
+    bool checked: true
+    alias background: Loader
+    alias indicator: Loader
+
+//********TabView
+//inherits Item
+@property
+    alias container: Item
+    int index
+    string headerAlignment: "top-left"
+    //alignment: top-left;top-center;top-right;bottom-left;bottom-center;bottom-right;left-center;right-center;
+    alias header: ListView
+    int headerItemWidth
+    int headerItemHeight
+    SequentialAnimation switchAnimation
+@method
+    switchView(index)
+@signal
+    init()
+
+//********CursorArea
+//inherits Item
+@property
+    Qt::CursorShape cursor
+
+//********DropArea
+//inherits Item
+@property
+    bool acceptingDrops
+@signal
+    enter()
+    leave()
+    drop(mimeData)
+    acceptingDropsChanged()
+
+//********Tip
+//inherits Item
+@property
+    string text
+
+//********WheelArea
+//inherits Item
+@signal
+    upDirection()
+    downDirection()
+
+//********Pixmap
+//inherits Item
+@property
+    image source
+
+//********Util(Object)
+@method
+    void debug(const QVariant &msg); // 打印debug调试信息
+    void warning(const QVariant &msg); // 打印warning调试信息
+    void critical(const QVariant &msg); // 打印critical调试信息
+    void fatal(const QString &msg); // 打印fatal调试信息
+    bool openUrl(const QString &url); // 打开
+    bool openStandardLocation(int type);
+
+    QVariant getColor(const QString &defaultValue);
+    QVariant getFont(const QString &defaultValue);
+    QVariant getOpenFileName();
+    QVariant getOpenFileNames();
+    QVariant getSaveFileName();
+    QVariant getStandardLocation(int type);
+
+    QImage getFileIcon(const QString &file);
+    QIcon getIcon(const QString &fileName);
+    QVariant getFileInfoList(const QString &path);
+
+    QVariant showDialog(const QString &qml, const QVariant &parameter = QVariant(), QObject *parent = NULL);
+    QObject *showWindow(const QString &qml, const QVariant &parameter = QVariant(), QObject *parent = NULL);
+    QObject *popWindow(const QString &qml, const QVariant &parameter = QVariant(), QObject *parent = 0);
+    QObject *showToolTip(const QString &qml, const QVariant &parameter = QVariant(), QObject *parent = 0);
+    void hideToolTip();
+    QObject *toolTip();
+    QObject *getTopParentWidget(QObject *item);
+
+    QPoint cursorPosition();
+    QPoint mapToWindow(QObject *item);
+    QPoint mapToScreen(QObject *item);
+
+    QRect screenAvailableGeometry();
+    QRect screenGeometry();
+    QString makeUrl(const QVariantMap &urlInfo);
+    QString format(const QString &content, const QVariantList &parameters);

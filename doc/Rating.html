@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Rating参考文档</title>
+<link href="style/base.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="header">
+		<p>Components 参考文档</p>
+	</div>
+<div id="body">
+  <p class="title">Rating控件</p>
+		<p> Rating控件提供等级评定  。<a href="#detial">查看详细</a></p>
+      <p>继承自Item。</p>        
+		<p><a name="property" class="subject">属性</a></p>
+		<ul>
+		  <li><a class="property" href="#total">total</a> : int</li>
+		  <li><a class="property" href="#value">value</a> : int</li>
+		  <li><a class="property" href="#enableEdit">enableEdit</a> : bool</li>
+		  <li><a class="property" href="#spacing">spacing</a> : int</li>
+		  <li><a class="property" href="#background">background</a> : Component</li>
+		  <li><a class="property" href="#foreground">foreground</a> : Component</li>
+	  </ul>
+	  <p><a name="signals" class="subject">信号</a></p>
+	  <p>参见  QML  Item Element</p>
+		<p><a name="methods" class="subject">方法</a></p>
+		<p>参见  QML  Item Element</p>
+	  <p><a name="detail" class="subject">详细说明</a></p>
+		<p>Rating提供一个评分显示和修改的能力。</p>
+  <p>网上有很多资源都可以对其进行打分，此控件便是模仿哪些打分控件做的，比较容易自定义。</p>
+		<p><a name="usage" class="subject">用法</a></p>
+        <p>下面这个例子被包含在<a href="example/ExampleRating.qml">ExampleRating.qml</a>:</p>
+	  <pre>Rating {
+    id: rating
+    enableEdit: true
+}</pre>
+<p>我们可以很方便的通过<a class="property" href="#background">background</a>和<a class="property" href="#foreground">foreground</a>来更改Rating内部元素的样式，他们可以是任意可视QML元素。</p>
+		<p><a name="property_document" class="subject">属性文档</a></p>
+		<p class="property"><a class="property" name="total">total</a> : int
+  <p>这个属性描述可以评定范围，默认值为5。</p>
+        </p>
+  <p class="property"><a class="property" name="value">value</a> : int
+  <p>这个属性描述当前评分。      </p>
+    <p class="property"><a class="property" name="enableEdit">enableEdit</a> : bool
+  <p>这个属性控制是否可以进行评定动作，默认为false。</p>
+        </p>
+		<p class="property"><a class="property" name="spacing">spacing</a> : int
+  <p>这个属性控制Rating内部元素间距。</p>
+		<p class="property"><a class="property" name="background">background</a> : Component
+		<p>这个属性控制Rating内部元素背景，可以是任意QML可视元素。</p>
+		<p class="property"><a class="property" name="foreground">foreground</a> : Component
+	  <p>这个属性控制Rating内部元素前景，可以是任意QML可视元素。</p>
+  </div>
+	<div id="footer">
+    <p>Made by lei</p>
+</div>
+</body>
+</html>

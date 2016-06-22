@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Window参考文档</title>
+<link href="style/base.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="header">
+		<p>Components 参考文档</p>
+	</div>
+<div id="body">
+		<p class="title">Window控件</p>
+  <p>Window控件能对鼠标事件进行响应。<a href="#detial">查看详细</a></p>
+  <p>继承自MouseArea。</p>        
+  <p><a name="property" class="subject">属性</a></p>
+		<ul>
+		  <li><a class="property" href="#moveEnable">moveEnable</a> : bool</li>
+	  </ul>
+  <p><a name="signals" class="subject">信号</a></p>
+	  <p>参见MouseArea</p>
+		<p><a name="methods" class="subject">方法</a></p>
+		<p>参见MouseArea</p>
+  <p><a name="detail" class="subject">详细说明</a></p>
+		<p>Window控件能对鼠标事件进行响应，用于弹出对话框，弹出窗口，弹出菜单。		</p>
+		<p>此控件用于QML的最外层，也就是说所有的内容都写在Window{}里面，如果你需要对窗口进行一些特殊控制，Components组件提供了一个运行时对象window，通过这个对象你可以对窗口的基本属性进行设置，比如你想设置窗口的标题栏名称，你可以这样：</p>
+		<p>window.windowTitle = &quot;window title&quot;</p>
+		<p>如果你还想设置窗口的其他属性，请参见QWidget属性。</p>
+		<p>值得一提的是，窗口的大小是根据Window控件的大小来决定的，例如：</p>
+		<p>Window { width: 800; height: 600 }</p>
+  <p>这样，实际显示的窗体大小就是800X600了。</p>
+  <p><a name="usage" class="subject">用法</a></p>
+  <p>无</p>
+  <p><a name="property_document" class="subject">属性文档</a></p>
+  <p class="property"><a class="property" name="moveEnable">moveEnable</a> : bool
+  <p>这个属性用于窗口是否可以拖动。</p>
+</div>
+<div id="footer">
+<p>Made by lei</p>
+</div>
+</body>
+</html>

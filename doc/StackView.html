@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>StackView参考文档</title>
+<link href="style/base.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="header">
+		<p>Components 参考文档</p>
+	</div>
+<div id="body">
+  <p class="title">StackView控件</p>
+  <p>StackView控件提供一个视图的层叠管理，栈视图。<a href="#detial">查看详细</a></p>
+      <p>继承自Item。</p>        
+  <p><a name="property" class="subject">属性</a></p>
+		<ul>
+		  <li><a class="property" href="#depth">depth</a> : int</li>
+     </ul>
+  <p><a name="signals" class="subject">信号</a></p>
+  <p>参见QML Item Element。</p>		
+  <p><a name="methods" class="subject">方法</a></p>
+		  <li>StackView::<a class="property" href="#push">push</a>(view, parameter)</li>
+		  <li>StackView::<a class="property" href="#pop">pop</a>()</li>
+		  <li>StackView::<a class="property" href="#popIndex">popIndex</a>(index)</li>
+		  <li>StackView::<a class="property" href="#clear">clear</a>()</li>
+  <li>Item StackView::<a class="property" href="#getView">getView</a>(index)</li>
+		  <li>Item StackView::<a class="property" href="#getCurrentView">getCurrentView</a>()</li>
+  <p><a name="detail" class="subject">详细说明</a></p>
+  <p>不想写。</p>
+  <p><a name="usage" class="subject">用法</a></p>
+  <p>下面这个例子被包含在<a href="example/ExampleChainedView.qml">ExampleStackView.qml</a>:</p>
+  <pre>StackView {
+    id: stackview
+    width: 600
+    height: 400
+
+    Component {
+        id: testView
+        Rectangle {
+            property string title
+            width: stackview.width; height: stackview.height - 60
+            color: Qt.rgba(Math.random(),Math.random(),Math.random(),1)
+            border { width: 1; color: "black" }
+            Component.onCompleted: title = "Rect " + stackview.depth
+        }
+    }
+
+    Row {
+        id: buttonbar
+        anchors.bottom: parent.bottom
+        Button {
+            id: button_push
+            tip: "push"
+            Rectangle {
+                width: 80; height: 30; radius: 15; smooth: true
+                border { width: 1; color: "#8C8C8D" }
+                Text { text: "Push"; anchors.centerIn: parent }
+            }
+            onClicked: stackview.push(testView)
+        }
+        Button {
+            id: button_pop
+            tip: "pop"
+            anchors.bottom: parent.bottom
+            Rectangle {
+                width: 80; height: 30; radius: 15; smooth: true
+                border { width: 1; color: "#8C8C8D" }
+                Text { text: "Pop"; anchors.centerIn: parent }
+            }
+            onClicked: stackview.pop()
+        }
+        Repeater {
+            model: stackview.depth
+            delegate: Button {
+                id: button
+                Rectangle {
+                    width: 80; height: 30; radius: 15; smooth: true
+                    border { width: 1; color: "#8C8C8D" }
+                    Text {
+                        text: stackview.getView(index).title
+                        anchors.centerIn: parent
+                    }
+                }
+                onClicked: {
+                    stackview.popIndex(index)
+                }
+            }
+        }
+    }
+}</pre>
+<p>StackView控件支持Component和qml文件，例子稍微复杂了点，不好意思。</p>
+<p><a name="property_document" class="subject">属性文档</a></p>
+  <p class="property"><a class="property" name="depth">depth</a> : int
+  <p>这个属性保存栈视图深度。</p>
+
+<p><a name="property_document" class="subject">方法文档</a></p>
+  <p class="property">StackView::<a class="property" name="push">push</a>(view, parameter)
+  <p>view可以是qml文件地址，也可以是Component对象。</p>
+  <p>parameter参数可选，用于view的初始化。</p>
+  <p>将view压栈，显示于最上层。</p>
+  <p class="property">StackView::<a class="property" name="pop">pop</a>()
+  <p>这个方法用于弹出顶层视图。</p>
+  <p class="property">StackView::<a class="property" name="popIndex">popIndex</a>(index)
+  <p>这个方法用于弹出视图到index的位置。</p>
+  <p class="property">StackView::<a class="property" name="clear">clear</a>()
+  <p>这个方法用于清除所有视图。</p>
+  <p class="property">Item StackView::<a class="property" name="getView">getView</a>(index)
+  <p>这个方法用于获取index位置的视图对象。</p>
+  <p class="property">Item StackView::<a class="property" name="getCurrentView">getCurrentView</a>()
+  <p>这个方法用于当前视图对象。</p>
+</div>
+<div id="footer">
+<p>Made by lei</p>
+</div>
+</body>
+</html>

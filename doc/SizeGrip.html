@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>SizeGrip参考文档</title>
+<link href="style/base.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="header">
+		<p>Components 参考文档</p>
+	</div>
+<div id="body">
+  <p class="title">SizeGrip控件</p>
+		<p> SizeGrip控件提供改变父对象大小的功能  。<a href="#detial">查看详细</a></p>
+      <p>继承自Button。</p>        
+		<p><a name="property" class="subject">属性</a></p>
+		<ul>
+		  <li><a class="property" href="#minimum">minimum</a> : variant</li>
+		  <li><a class="property" href="#maximum">maximum</a> : variant</li>
+		  <li><a class="property" href="#indicator">indicator</a> : Component</li>
+	  </ul>
+  <p><a name="signals" class="subject">信号</a></p>
+	  <p>参见Button</p>
+		<p><a name="methods" class="subject">方法</a></p>
+		<p>参见Button</p>
+	  <p><a name="detail" class="subject">详细说明</a></p>
+		<p>SizeGrip控件提供改变父对象大小的功能，类似对话框大小调节，默认放在右下角。</p>
+		<p><a name="usage" class="subject">用法</a></p>
+        <p>下面这个例子被包含在<a href="example/ExampleSizeGrip.qml">ExampleSizeGrip.qml</a>:</p>
+	  <pre>Rectangle {
+    width: 100; height: 100
+    color: "yellow"
+    SizeGrip {}
+}</pre>
+<p>我们可以通过<a class="property" href="#indicator">indicator</a>属性对SizeGrip的显示样式进行定制，比如：</p>
+<p><a class="property" href="#indicator">indicator</a>： Rectangle {width: 10; height: 10; color: &quot;gray&quot;}</p>
+		<p><a name="property_document" class="subject">属性文档</a></p>
+  <p class="property"><a class="property" name="minimum">minimum</a> : variant
+  <p>这个属性描述可调节的最小范围。</p>
+  <p>值需要这样填充：{&quot;width&quot;: 100; &quot;height&quot;: &quot;100&quot;}。</p>
+        </p>
+  <p class="property"><a class="property" name="maximum">maximum</a> : variant
+  <p>这个属性描述可调节的最大范围。</p>
+  <p>值需要这样填充：{&quot;width&quot;: 500; &quot;height&quot;: &quot;500&quot;}。</p>
+		<p class="property"><a class="property" name="indicator">indicator</a> : Component
+	  <p>这个属性控制SizeGrip的显示，可以是任意QML可视元素。</p>
+</div>
+<div id="footer">
+<p>Made by lei</p>
+</div>
+</body>
+</html>

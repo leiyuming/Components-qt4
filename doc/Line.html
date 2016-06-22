@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Line 参考文档</title>
+<link href="style/base.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="header">
+		<p>Components 参考文档</p>
+	</div>
+<div id="body">
+  <p class="title"> Line控件</p>
+		<p> <span class="title">Line</span>控件提供类似分割线的功能。<a href="#detial">查看详细</a></p>
+      <p>继承自Item。</p>        
+	  <p><a name="property" class="subject">属性</a></p>
+		<ul>
+		  <li><a class="property" href="#direction">direction</a> : Qt::Orientation</li>
+		  <li><a class="property" href="#content">content</a> : Component</li>
+     </ul>
+	  <p><a name="signals" class="subject">信号</a></p>
+	  <p>参见QML  Item Element</p>
+		<p><a name="methods" class="subject">方法</a></p>
+		<p>参见QML  Item Element</p>
+  <p><a name="detail" class="subject">详细说明</a></p>
+		<p>在设计界面的时候，很多情况需要用线来分隔区域，Line控件提供了这个功能。</p>
+  <p>之所以提供这个控件，是因为有时候我们用QML Rectangle来划线的时候，遇到渐变线并且想要横着放的时候，如果将此Rectangle放到布局控件里（比如：Column），在布局上将很难处理，Line控件则解决了这样的问题，可以很方便的被布局。</p>
+	  <p><a name="usage" class="subject">用法</a></p>
+        <p>下面这个例子被包含在<a href="example/ExampleLine.qml">ExampleLine.qml</a>:</p>
+	  <pre>Line {
+    width: 300; height: 2
+    content: Rectangle { color: "black" }
+}</pre>
+<p><a name="property_document" class="subject">属性文档</a></p>
+	  <p class="property"><a class="property" name="direction">direction</a> : Qt::Orientation
+      <p>这个属性用于控制线的方向，默认为Qt::Horizontal。</p>
+	  <p class="property"><a class="property" name="content">content</a> : Component
+	  <p>这个属性用于控制线的内容，可以是任意可视元素。</p>
+</div>
+<div id="footer">
+<p>Made by lei</p>
+</div>
+</body>
+</html>

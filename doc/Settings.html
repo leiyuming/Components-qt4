@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Settings 参考文档</title>
+<link href="style/base.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="header">
+		<p>Components 参考文档</p>
+	</div>
+<div id="body">
+  <p class="title">Settings控件</p>
+		<p>Settings对象提供对配置文件的读写。<a href="#detial">查看详细</a></p>
+      <p>继承自QObject。</p>        
+	  <p><a name="property" class="subject">属性</a></p>
+  <ul>
+		  <li><a class="property" href="#running">running</a> : bool</li>
+  </ul>
+  <p><a name="signals" class="subject">信号</a></p>
+  <p>参见QObject</p>		
+  <p><a name="methods" class="subject">方法</a></p>
+      <ul>
+		  <li><a class="property" href="#setFileName">setFileName</a>(string filename) </li>
+		  <li>stringlist <a class="property" href="#setFileName">allKeys</a>() </li>
+		  <li><a class="property" href="#setFileName">beginGroup</a>(string group) </li>
+		  <li>stringlist <a class="property" href="#setFileName">childGroups</a>() </li>
+		  <li>stringlist <a class="property" href="#setFileName">childKeys</a>() </li>
+		  <li><a class="property" href="#setFileName">clear</a>() </li>
+		  <li><a class="property" href="#setFileName">contains</a>(string key) </li>
+		  <li><a class="property" href="#setFileName">endGroup</a>() </li>
+		  <li>string <a class="property" href="#setFileName">fileName</a>() </li>
+		  <li>string <a class="property" href="#setFileName">group</a>() </li>
+		  <li>bool <a class="property" href="#setFileName">isWritable</a>() </li>
+		  <li><a class="property" href="#setFileName">remove</a>(string key) </li>
+		  <li><a class="property" href="#setFileName">setValue</a>(string key, variant value) </li>
+		  <li><a class="property" href="#setFileName">sync</a>() </li>
+		  <li>variant <a class="property" href="#setFileName">value</a>(string key, variant defaultValue) </li>
+		  <li><a class="property" href="#setFileName">setIniCodec</a>(string codecName) </li>
+      </ul>		
+  <p><a name="detail" class="subject">详细说明</a></p>
+		<p>Settings对象提供对配置文件的读写，对应方法与QSettings相同。</p>
+		<p>具体的方法调用，参见QSettings。</p>
+		<p>唯一不同的是Settings对象在初始化完成后，必须要Component.onCompleted: settings.setFileName()，调用一下setFileName，否则不能正常使用，这个主要是考虑到QSettings可以操作NativeFormat格式的配置。如果setFileName的参数filename为空，默认为NativeFormat操作，否则为IniFormat操作。</p>
+  <p><a name="usage" class="subject">用法</a></p>
+	  <pre>Settings { 
+    id: settings
+    Component.onCompleted: settings.setFileName(&quot;config.ini&quot;)
+}</pre>
+</div>
+<div id="footer">
+<p>Made by lei</p>
+</div>
+</body>
+</html>

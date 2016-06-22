@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ToolBox 参考文档</title>
+<link href="style/base.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="header">
+		<p>Components 参考文档</p>
+	</div>
+<div id="body">
+  <p class="title">ToolBox控件</p>
+		<p>ToolBox控件提供一个工具箱功能。<a href="#detial">查看详细</a></p>
+      <p>继承自ScrollArea。</p>        
+	  <p><a name="property" class="subject">属性</a></p>
+	  <p>参见ScrollArea</p>
+  <p><a name="signals" class="subject">信号</a></p>
+  <p>参见ScrollArea</p>		
+  <p><a name="methods" class="subject">方法</a></p>
+		<p>参见ScrollArea</p>
+  <p><a name="detail" class="subject">详细说明</a></p>
+		<p>ToolBox控件提供一个工具箱功能，模仿QQ好友列表做的。</p>
+  <p><a name="usage" class="subject">用法</a></p>
+  <p>下面这个例子被包含在<a href="example/ExampleToolBox.qml">ExampleToolBox.qml</a>:</p>
+	  <pre>import QtQuick 1.1
+import Components 1.0
+
+ToolBox {
+    id: toolbox
+    width: 300; height: 400
+    Repeater {
+        model: 5
+        delegate: ToolBoxItem {
+            id: toolboxitem
+            width: toolbox.controlArea.width
+            state: "expand"
+            header: Button {
+                enableCursor: true
+                cursor: Qt.PointingHandCursor
+                Rectangle {
+                    id: headerItem
+                    width: toolboxitem.width; height: 30
+                    color: toolboxitem.state == "expand" ? "tomato" : "darkred"
+                    Text { anchors.centerIn: parent; text: "title " + index }
+                }
+                onClicked: {
+                    if (toolboxitem.state == "expand") {
+                        toolboxitem.height = headerItem.height
+                        toolboxitem.state = "unexpand"
+                    }
+                    else {
+                        toolboxitem.height = toolboxitem.childrenRect.height
+                        toolboxitem.state = "expand"
+                    }
+                }
+            }
+            view: Rectangle {
+                width: toolbox.width; height: 200; color: Qt.rgba(Math.random(), Math.random(), Math.random(), 1)
+            }
+        }
+    }
+}</pre>
+<p>&nbsp;</p>
+</div>
+<div id="footer">
+<p>Made by lei</p>
+</div>
+</body>
+</html>

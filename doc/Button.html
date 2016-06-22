@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Button参考文档</title>
+<link href="style/base.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="header">
+		<p>Components 参考文档</p>
+	</div>
+	<div id="body">
+		<p class="title">Button控件</p>
+		<p>Button控件能对鼠标事件进行响应。<a href="#detial">查看详细</a></p>
+      <p>继承自MouseArea。</p>        
+		<p><a name="property" class="subject">属性</a></p>
+		<ul>
+		  <li><a class="property" href="#__type__">__type__</a> : string</li>
+		  <li><a class="property" href="#enableCursor">enableCursor</a> : bool</li>
+		  <li><a class="property" href="#tip">tip</a> : string</li>
+		  <li><a class="property" href="#cursor">cursor</a> : Qt::CursorShape</li>
+	  </ul>
+		<p><a name="signals" class="subject">信号</a></p>
+	  <p>参见  QML  MouseArea Element</p>
+		<p><a name="methods" class="subject">方法</a></p>
+		<p>参见  QML  MouseArea Element</p>
+	  <p><a name="detail" class="subject">详细说明</a></p>
+		<p>Button控件提供的功能与MouseArea一致，并且提供了QML原生的MouseArea没有提供鼠标形状，以及tip信息提示的功能，更适合Windows平台的界面制作。</p>
+		<p><a name="usage" class="subject">用法</a></p>
+        <p>下面这个例子被包含在<a href="example/ExampleButton.qml">ExampleButton.qml</a>:</p>
+	  <pre>Button {
+    id: button
+    Rectangle {
+        width: 100; height: 40
+        color: button.containsMouse ? "#d2d2d2" : "#b5b5b5"
+        Text {
+            text: qsTr("按钮")
+            anchors.centerIn: parent
+        }
+    }
+}</pre>
+<p>Button控件能够自动根据内部内容调整大小，因此不必刻意的去设置Button的大小。</p>
+		<p><a name="property_document" class="subject">属性文档</a></p>
+		<p class="property"><a class="property" name="__type__">__type__</a> : string
+	        <p>这个属性用于描述按钮类型，一般情况下不需要关心。</p>
+	        <p>如果你需要继承Button，那么你应当设置这个属性。</p>
+        </p>
+		<p class="property"><a class="property" name="enableCursor">enableCursor</a> : bool
+	        <p>这个属性控制鼠标指针形状是否可以改变。默认值为false。</p>
+        </p>相关：<a class="property" href="#cursor">cursor</a>
+        <p class="property"><a class="property" name="tip">tip</a> : string
+	        <p>这个属性控制提示信息。</p>
+      <p>当鼠标移动到按钮所在区域悬停时，显示此内容提示信息；当信息内容为空时，信息不显示。</p>
+        </p>
+		<p class="property"><a class="property" name="cursor">cursor</a> : Qt::CursorShape
+	        <p>这个属性控制鼠标指针样式。</p>
+	        <p>注意：如果<a class="property" href="#enableCursor">enableCursor</a>值为false你将看不到鼠标指针改变的效果。</p>
+	</div>
+<div id="footer">
+<p>Made by lei</p>
+</div>
+</body>
+</html>

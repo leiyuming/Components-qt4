@@ -1,0 +1,41 @@
+<RCC>
+    <qresource prefix="/Components">
+        <file>ChainedView.js</file>
+        <file>RadioGroup.js</file>
+        <file>StackView.js</file>
+        <file>Banner.qml</file>
+        <file>Button.qml</file>
+        <file>ChainedView.qml</file>
+        <file>CheckBox.qml</file>
+        <file>Frame.qml</file>
+        <file>FrameAnimation.qml</file>
+        <file>GroupBox.qml</file>
+        <file>IndicatorCircle.qml</file>
+        <file>IndicatorImage.qml</file>
+        <file>IndicatorLine.qml</file>
+        <file>Line.qml</file>
+        <file>LineEdit.qml</file>
+        <file>Link.qml</file>
+        <file>PartImage.qml</file>
+        <file>PartImageAnimation.qml</file>
+        <file>ProgressBar.qml</file>
+        <file>RadioButton.qml</file>
+        <file>RadioGroup.qml</file>
+        <file>Rating.qml</file>
+        <file>ScrollArea.qml</file>
+        <file>ScrollBar.qml</file>
+        <file>ScrollText.qml</file>
+        <file>Selector.qml</file>
+        <file>SizeGrip.qml</file>
+        <file>Slider.qml</file>
+        <file>Spliter.qml</file>
+        <file>StackView.qml</file>
+        <file>Switcher.qml</file>
+        <file>TabView.qml</file>
+        <file>Dialog.qml</file>
+        <file>Window.qml</file>
+        <file>ToolBox.js</file>
+        <file>ToolBox.qml</file>
+        <file>ToolBoxItem.qml</file>
+    </qresource>
+</RCC>

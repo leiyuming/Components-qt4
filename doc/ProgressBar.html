@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ProgressBar参考文档</title>
+<link href="style/base.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="header">
+		<p>Components 参考文档</p>
+	</div>
+<div id="body">
+	  <p class="title">ProgressBar控件</p>
+		<p> ProgressBar控件提供进度显示。<a href="#detial">查看详细</a></p>
+      <p>继承自Item。</p>        
+  <p><a name="property" class="subject">属性</a></p>
+		<ul>
+		  <li><a class="property" href="#background">background</a> : Component</li>
+		  <li><a class="property" href="#block">block</a> : Component</li>
+		  <li><a class="property" href="#highlighter">highlighter</a> : Component</li>
+		  <li><a class="property" href="#highlighterContainer">highlighterContainer</a> : Item</li>
+		  <li><a class="property" href="#title">title</a> : Text</li>
+		  <li><a class="property" href="#titleColors">titleColors</a> : variant</li>
+		  <li><a class="property" href="#value">value</a> : int</li>
+      </ul>
+		<p><a name="signals" class="subject">信号</a></p>
+	  <p>参见QML  Item Element</p>
+		<p><a name="methods" class="subject">方法</a></p>
+		<p>参见QML  Item Element</p>
+  <p><a name="detail" class="subject">详细说明</a></p>
+		<p> ProgressBar控件提供进度显示。简化了QML写进度条的繁琐工作。</p>
+  <p>此空间提供了背景，块和高亮的自定义，非常简单。 </p>
+	  <p><a name="usage" class="subject">用法</a></p>
+        <p>下面这个例子被包含在<a href="example/ExampleProgressBar.qml">ExampleProgressBar.qml</a>:</p>
+	  <pre>ProgressBar {
+    anchors.centerIn: parent
+    width: 300; height: 20
+    // background: Rectangle { color: "lightgray" }
+    // block: Rectangle { color: "lightblue" }
+    // highlighter: Rectangle { color: "green" }
+}</pre>
+<p>ProgressBar默认提供了一个style，如果你需要自定义样式，重新写一下<a class="property" href="#background">background</a>，<a class="property" href="#block">block</a>，<a class="property" href="#highlighter">highlighter</a>属性就可以了。</p>
+		<p><a name="property_document" class="subject">属性文档</a></p>
+	  <p class="property"><a class="property" name="background">background</a> : Component
+      <p>设置进度条的背景，可以是任何可视元素。</p>
+        </p>
+	  <p class="property"><a class="property" name="block">block</a> : Component
+      <p>设置进度条的背景，可以是任何可视元素。</p>
+	  <p class="property"><a class="property" name="highlighter">highlighter</a> : Component
+      <p>设置进度条的背景，可以是任何可视元素。</p>
+  <p class="property"><a class="property" name="highlighterContainer">highlighterContainer</a> : Item
+      <p>用于控制当<a class="property" href="#value">value</a>值为-1的时候处理高亮问题，还没完善，这部分不是很好写。（求指教）</p>
+  <p class="property"><a class="property" name="title">title</a> : Text
+      <p>用于控制进度条文本显示。</p>
+      <p>当进度超过<a class="property" href="#title">title</a>的可视位置的一半时，文本的颜色会根据<a class="property" href="#titleColors">titleColors</a>属性值进行变更。</p>
+  <p>请参考QML Text Element。</p>
+  <p class="property"><a class="property" name="titleColors">titleColors</a> : variant
+      <p>用于控制进度条文本显示的颜色，值的赋值样板为：[&quot;color 1&quot;, &quot;color 2&quot;]。</p>
+  <p class="property"><a class="property" name="value">value</a> : int
+  <p>用于控制和记录进度条的进度值。</p>
+</div>
+	<div id="footer">
+    <p>Made by lei</p>
+</div>
+</body>
+</html>

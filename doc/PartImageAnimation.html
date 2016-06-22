@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>PartImageAnimation参考文档</title>
+<link href="style/base.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="header">
+		<p>Components 参考文档</p>
+	</div>
+	<div id="body">
+	  <p class="title">PartImageAnimation控件</p>
+		<p> PartImageAnimation控件能动画显示一个图片组。<a href="#detial">查看详细</a></p>
+      <p>继承自Item。</p>        
+		<p><a name="property" class="subject">属性</a></p>
+		<ul>
+		  <li><a class="property" href="#image">image</a> : Image</li>
+		  <li><a class="property" href="#partCount">partCount</a> : int</li>
+		  <li><a class="property" href="#index">index</a> : int</li>
+		  <li><a class="property" href="#direction">direction</a> : Qt::Orientation</li>
+		  <li><a class="property" href="#timer">timer</a> : Timer</li>
+      </ul>
+		<p><a name="signals" class="subject">信号</a></p>
+	  <p>参见QML  Item Element</p>
+		<p><a name="methods" class="subject">方法</a></p>
+		<p>参见QML  Item Element</p>
+	  <p><a name="detail" class="subject">详细说明</a></p>
+		<p>PartImageAnimation控件提供了一个帧动画的解决方案，你只需要准备一副帧序列的图片。</p>
+	  <p><a name="usage" class="subject">用法</a></p>
+        <p>下面这个例子被包含在<a href="example/ExamplePartImageAnimation.qml">ExamplePartImageAnimation.qml</a>:</p>
+	  <pre>PartImageAnimation {
+    image.source: "file:ExamplePartImageAnimation/connecting.png"
+    partCount: 10
+    timer.interval: 100
+}</pre>
+<p>PartImageAnimation是将一个完整的图片做分割显示，对图片源有简单要求</p>
+<p>比如：<img src="resource/connecting.png" width="33" height="30" />这个图片你需要明确一下几个问题：</p>
+<ol>
+  <li>首先这个图片是个帧序列，默认为垂直排列（PartImageAnimation控件的<a class="property" href="#direction">direction</a>默认是垂直的，所以在例子中没有设置， 如果你的图片帧是横排的，那么<a class="property" href="#direction">direction</a>这个值应该被设置为Qt::Horizontal）；</li>
+  <li>你需要明确这个图片有多少帧，用<a class="property" href="#partCount">partCount</a>写明；</li>
+  <li>最后就是动画的时间间隔（你可以不设置，默认为100毫秒）。</li>
+  </ol>
+<p>你不需要指明PartImageAnimation的大小，当你设置好image.source和partCount后，会自动计算的。</p>
+		<p><a name="property_document" class="subject">属性文档</a></p>
+	  <p class="property"><a class="property" name="image">image</a> : Image
+      <p>参见QML Image Element。</p>
+        </p>
+	  <p class="property"><a class="property" name="partCount">partCount</a> : int
+      <p>这个属性设置图片帧的数量。</p>
+      <p class="property"><a class="property" name="index">index</a> : int
+      <p>这个属性指示当前帧。</p>
+      <p class="property"><a class="property" name="direction">direction</a> : Qt::Orientation
+      <p>这个属性描述图片源帧的排列方向，默认为Qt.Vertical。</p>
+	  <p class="property"><a class="property" name="timer">timer</a> : Timer
+      <p>通过这个属性，我们可以控制帧动画的速率，是否循环播放等状态。</p>
+      <p>具体使用方法参加QML Timer Element。</p>
+</div>
+	<div id="footer">
+    <p>Made by lei</p>
+</div>
+</body>
+</html>

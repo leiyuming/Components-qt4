@@ -1,0 +1,52 @@
+import QtQuick.tooling 1.1
+
+// This file describes the plugin-supplied types contained in the library.
+// It is used for QML tooling purposes only.
+
+Module {
+    Component {
+        name: "CursorArea"
+        defaultProperty: "data"
+        prototype: "QDeclarativeItem"
+        exports: [
+            "CursorArea 1.0"
+        ]
+        Property { name: "cursor"; type: "Qt::CursorShape" }
+        Signal { name: "cursorChanged" }
+    }
+    Component {
+        name: "DropArea"
+        defaultProperty: "data"
+        prototype: "QDeclarativeItem"
+        exports: [
+            "DropArea 1.0"
+        ]
+        Property { name: "acceptingDrops"; type: "bool" }
+        Signal { name: "enter" }
+        Signal { name: "leave" }
+        Signal {
+            name: "drop"
+            Parameter { name: "mimeData"; type: "QVariant" }
+        }
+        Signal { name: "acceptingDropsChanged" }
+    }
+    Component {
+        name: "Tip"
+        defaultProperty: "data"
+        prototype: "QDeclarativeItem"
+        exports: [
+            "Tip 1.0"
+        ]
+        Property { name: "text"; type: "string" }
+    }
+    Component {
+        name: "WheelArea"
+        defaultProperty: "data"
+        prototype: "QDeclarativeItem"
+        exports: [
+            "WheelArea 1.0"
+        ]
+        Signal { name: "upDirection" }
+        Signal { name: "downDirection" }
+    }
+}

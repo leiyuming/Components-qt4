@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Banner参考文档</title>
+<link href="style/base.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="header">
+		<p>Components 参考文档</p>
+	</div>
+<div id="body">
+  <p class="title">Banner控件</p>
+  <p>Banner控件提供类似网页横幅功能。<a href="#detial">查看详细</a></p>
+      <p>继承自Item。</p>        
+  <p><a name="property" class="subject">属性</a></p>
+		<ul>
+		  <li><a class="property" href="#index">index</a> : int</li>
+		  <li><a class="property" href="#circleMode">circleMode</a> : bool</li>
+		  <li><a class="property" href="#timer">timer</a> : Timer</li>
+     </ul>
+  <p><a name="signals" class="subject">信号</a></p>
+  <p>参见QML Item Element。</p>		
+  <p><a name="methods" class="subject">方法</a></p>
+		<p>参见QML  Item Element</p>
+  <p><a name="detail" class="subject">详细说明</a></p>
+		<p>Banner控件提供视图容器，可以控制子视图做横向滑动。</p>
+	  <p><a name="usage" class="subject">用法</a></p>
+  <p>下面这个例子被包含在<a href="example/ExampleBanner.qml">ExampleBanner.qml</a>:</p>
+  <pre>Banner {
+    anchors.centerIn: parent
+    Rectangle {
+        width: 200; height: 200; color: "lightgray"
+        Text { text: "view 1"; anchors.centerIn: parent }
+    }
+    Rectangle {
+        width: 200; height: 200; color: "gray"
+        Text { text: "view 2"; anchors.centerIn: parent }
+    }
+    Rectangle {
+        width: 200; height: 200; color: "dimgray"
+        Text { text: "view 3"; anchors.centerIn: parent }
+    }
+}</pre>
+<p>Banner控件可以自动适应内部视图大小，因此不用显示指定Banner控件的大小，利用此控件你可以很容易做到网页横幅的效果。</p>
+<p><a name="property_document" class="subject">属性文档</a></p>
+  <p class="property"><a class="property" name="index">index</a> : int
+  <p>这个属性表示当前处于哪个视图，默认为Banner内部子视图的顺序，从0开始计数。</p>
+  <p class="property"><a class="property" name="circleMode">circleMode</a> : bool
+  <p>这个属性用于控制Banner控件子视图滑动的方式，是圆形轨迹还是顺序轨迹，默认为true，圆形轨迹。</p>
+  <p class="property"><a class="property" name="timer">timer</a> : Timer
+  <p>这个属性用于控制时间间隔以相关特性。</p>
+  <p>参见QML Timer Element。</p>
+</div>
+<div id="footer">
+<p>Made by lei</p>
+</div>
+</body>
+</html>

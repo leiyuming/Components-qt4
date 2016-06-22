@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Util 参考文档</title>
+<link href="style/base.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="header">
+		<p>Components 参考文档</p>
+	</div>
+<div id="body">
+  <p class="title">Util运行时对象</p>
+  <p>此对象提供了诸多有用方法，弥补QML Qt Element的不足，增加了大量实用的功能。</p>
+  <p><a name="methods" class="subject">方法</a></p>
+<li>void <a class="property" href="#debug">debug</a>(const QVariant &msg);</li>
+<li>void <a class="property" href="#warning">warning</a>(const QVariant &msg);</li>
+<li>void <a class="property" href="#critical">critical</a>(const QVariant &msg);</li>
+<li>void <a class="property" href="#fatal">fatal</a>(const QString &msg);</li>
+<li>bool <a class="property" href="#openUrl">openUrl</a>(const QString &url);</li>
+<li>bool <a class="property" href="#openStandardLocation">openStandardLocation</a>(int type);</li>
+
+<li>QVariant <a class="property" href="#getColor">getColor</a>(const QString &defaultValue);</li>
+<li>QVariant <a class="property" href="#getFont">getFont</a>(const QString &defaultValue);</li>
+<li>QVariant <a class="property" href="#getOpenFileName">getOpenFileName</a>();</li>
+<li>QVariant <a class="property" href="#getOpenFileNames">getOpenFileNames</a>();</li>
+<li>QVariant <a class="property" href="#getSaveFileName">getSaveFileName</a>();</li>
+<li>QVariant <a class="property" href="#getStandardLocation">getStandardLocation</a>(int type);</li>
+
+<li>QImage <a class="property" href="#getFileIcon">getFileIcon</a>(const QString &file);</li>
+<li>QIcon <a class="property" href="#getIcon">getIcon</a>(const QString &fileName);</li>
+
+<li>QVariant <a class="property" href="#showDialog">showDialog</a>(const QString &qml, const QVariant &parameter = QVariant(), QObject *parent = NULL);</li>
+<li>QObject *<a class="property" href="#showWindow">showWindow</a>(const QString &qml, const QVariant &parameter = QVariant(), QObject *parent = NULL);</li>
+<li>QObject *<a class="property" href="#popWindow">popWindow</a>(const QString &qml, const QVariant &parameter = QVariant(), QObject *parent = 0);</li>
+<li>QObject *<a class="property" href="#showToolTip">showToolTip</a>(const QString &qml, const QVariant &parameter = QVariant(), QObject *parent = 0);</li>
+<li>void <a class="property" href="#hideToolTip">hideToolTip</a>();</li>
+<li>QObject *<a class="property" href="#toolTip">toolTip</a>();</li>
+<li>QObject *<a class="property" href="#getTopParentWidget">getTopParentWidget</a>(QObject *item);</li>
+
+<li>QPoint <a class="property" href="#cursorPosition">cursorPosition</a>();</li>
+
+<li>QRect <a class="property" href="#screenAvailableGeometry">screenAvailableGeometry</a>();</li>
+<li>QRect <a class="property" href="#screenGeometry">screenGeometry</a>();</li>
+<li>QString <a class="property" href="#makeUrl">makeUrl</a>(const QVariantMap &urlInfo);</li>
+<li>QString <a class="property" href="#format">format</a>(const QString &content, const QVariantList &parameters);</li>
+  <p><a name="methods" class="subject">方法文档</a></p>
+<p class="property">void <a class="property" name="debug">debug</a>(const QVariant &msg);</p>
+<p>打印调试信息。</p>
+<p class="property">void <a class="property" name="warning">warning</a>(const QVariant &msg);</p>
+<p>打印警告信息。</p>
+<p class="property">void <a class="property" name="critical">critical</a>(const QVariant &msg);</p>
+<p>打印调试信息。</p>
+<p class="property">void <a class="property" name="fatal">fatal</a>(const QString &msg);</p>
+<p>打印错误信息。</p>
+<p class="property">bool <a class="property" name="openUrl">openUrl</a>(const QString &url);</p>
+<p>此功能QML Qt Element已经提供。</p>
+<p class="property">bool <a class="property" name="openStandardLocation">openStandardLocation</a>(int type);</p>
+<p>参见QDesktopServices。</p>
+
+<p class="property">QVariant <a class="property" name="getColor">getColor</a>(const QString &defaultValue);</p>
+<p>颜色选择对话框，返回颜色值。</p>
+<p class="property">QVariant <a class="property" name="getFont">getFont</a>(const QString &defaultValue);</p>
+<p>字体选择对话框，返回字体名称。</p>
+<p class="property">QVariant <a class="property" name="getOpenFileName">getOpenFileName</a>();</p>
+<p>打开文件对话框，返回文件路径。</p>
+<p class="property">QVariant <a class="property" name="getOpenFileNames">getOpenFileNames</a>();</p>
+<p>打开文件对话框，返回文件路径列表stringlist。</p>
+<p class="property">QVariant <a class="property" name="getSaveFileName">getSaveFileName</a>();</p>
+<p>保存文件对话框，返回文件路径。</p>
+<p class="property">QVariant <a class="property" name="getStandardLocation">getStandardLocation</a>(int type);</p>
+<p>获取系统文件夹路径，参见QDesktopServices。</p>
+<p class="property">QImage <a class="property" name="getFileIcon">getFileIcon</a>(const QString &file);</p>
+<p>获取文件图标图片。</p>
+<p class="property">QIcon <a class="property" name="getIcon">getIcon</a>(const QString &fileName);</p>
+<p>获取文件图标。</p>
+<p class="property">QVariant <a class="property" name="showDialog">showDialog</a>(const QString &qml, const QVariant &parameter = QVariant(), QObject *parent = NULL);</p>
+<p>显示模态对话框，返回窗口处理结果。</p>
+<p class="property">QObject *<a class="property" name="showWindow">showWindow</a>(const QString &qml, const QVariant &parameter = QVariant(), QObject *parent = NULL);</p>
+<p>显示窗口，返回窗口对象。</p>
+<p class="property">QObject *<a class="property" name="popWindow">popWindow</a>(const QString &qml, const QVariant &parameter = QVariant(), QObject *parent = 0);</p>
+<p>显示弹出窗口，返回窗口对象。</p>
+<p class="property">QObject *<a class="property" name="showToolTip">showToolTip</a>(const QString &qml, const QVariant &parameter = QVariant(), QObject *parent = 0);</p>
+<p>显示自定义tip窗口，返回窗口对象。</p>
+<p class="property">void <a class="property" name="hideToolTip">hideToolTip</a>();</p>
+<p>隐藏tip窗口。</p>
+<p class="property">QObject *<a class="property" name="toolTip">toolTip</a>();</p>
+<p>获取自定义tip窗口对象。</p>
+<p class="property">QObject *<a class="property" name="getTopParentWidget">getTopParentWidget</a>(QObject *item);</p>
+<p>获取QML item对象所在窗口对象。</p>
+<p class="property">QPoint <a class="property" name="cursorPosition">cursorPosition</a>();</p>
+<p>获取当前鼠标位置。</p>
+<p class="property">QRect <a class="property" name="screenAvailableGeometry">screenAvailableGeometry</a>();</p>
+<p>获取当前桌面可用区域。</p>
+<p class="property">QRect <a class="property" name="screenGeometry">screenGeometry</a>();</p>
+<p>获取屏幕大小。</p>
+<p class="property">QString <a class="property" name="makeUrl">makeUrl</a>(const QVariantMap &urlInfo);</p>
+<p>生成url链接。</p>
+<p>用法：</p>
+<pre>var urlInfo = {
+"authority": "http://www.xxx.com",
+"parameter": {
+                &quot;para1&quot;: &quot;value1&quot;,
+                &quot;para2&quot;: &quot;value2&quot;
+             }
+};
+
+var url = Util.makeUrl(urlInfo);</pre>
+<p class="property">QString <a class="property" name="format">format</a>(const QString &content, const QVariantList &parameters);</p></div>
+<p>此方法用于解决QML的qsTr不足问题。</p>
+<p>很多情况下，界面上的文字都需要拼凑出来，但是这样又不利于做多语言翻译，所以提供此方法来解决问题。</p>
+<p>使用方法类似QString的arg；</p>
+<p>用法：</p>
+<pre>
+var source = qsTr(&quot;字符块%1字符块%2字符块&quot;);
+var parameter = [ &quot;para 1&quot;, &quot;para 2&quot; ];
+var content = Util.format(source, parameter);</pre>
+<div id="footer">
+<p>Made by lei</p>
+</div>
+</body>
+</html>

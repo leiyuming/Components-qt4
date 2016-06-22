@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>TabView参考文档</title>
+<link href="style/base.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="header">
+		<p>Components 参考文档</p>
+	</div>
+<div id="body">
+  <p class="title">TabView控件</p>
+  <p>TabView控件提供一个视图的标签管理。<a href="#detial">查看详细</a></p>
+      <p>继承自Item。</p>        
+  <p><a name="property" class="subject">属性</a></p>
+		<ul>
+		  <li><a class="property" href="#container">container</a> : Item</li>
+		  <li><a class="property" href="#index">index</a> : int</li>
+		  <li><a class="property" href="#header">header</a> : ListView</li>
+		  <li><a class="property" href="#headerItemWidth">headerItemWidth</a> : int</li>
+		  <li><a class="property" href="#headerItemHeight">headerItemHeight</a> : int</li>
+		  <li><a class="property" href="#headerAlignment">headerAlignment</a> : int</li>
+		  <li><a class="property" href="#headerAlignment">switchAnimation</a> : SequentialAnimation</li>
+	  </ul>
+  <p><a name="signals" class="subject">信号</a></p>
+      <ul>
+		  <li><a class="property" href="#onInit">onInit</a>(string mode) </li>
+      </ul>		
+  <p><a name="methods" class="subject">方法</a></p>
+		  <li>参见QML Item Element。</li>
+  <p><a name="detail" class="subject">详细说明</a></p>
+  <p>TabView控件提供一个视图的标签管理。</p>
+  <p>TabView的使用稍微复杂了点，以后再花点时间详细说明吧。</p>
+  <p>为了时TabView的子视图正确初始化，需要通过<a class="property" href="#onInit">onInit</a>完成设置。</p>
+	  <p><a name="usage" class="subject">用法</a></p>
+  <p>下面这个例子被包含在<a href="example/ExampleCheckBox.qml">ExampleTabView.qml</a>:</p>
+  <pre>TabView {
+    id: tabview
+    width: 500; height: 500
+    index: 0
+
+    headerAlignment: "top-left"
+    header.delegate: Component {
+        Button {
+            Rectangle { width: tabview.headerItemWidth; height: tabview.headerItemHeight
+                color: content[index].title; opacity: 0.6
+            }
+            Text { text: content[index].title; anchors.centerIn: parent; color: "white" }
+            onClicked: { tabview.index = index }
+        }
+    }
+    headerItemWidth: 80
+    headerItemHeight: 30
+    header.highlight: Rectangle {
+        width: tabview.headerItemWidth; height: tabview.headerItemHeight; color: "black"
+    }
+    onInit: {
+        if (mode == "all") {
+            for (var i = 0; i < content.length; i++) {
+                if (i != tabview.index) {
+                    content[i].x = tabview.width
+                }
+            }
+        }
+        else {
+            if (content.length - 1 != tabview.index) {
+                content[content.length - 1].x = tabview.width
+            }
+        }
+    }
+
+    Rectangle {
+        property string title: "Red"
+        width: parent.width; height: parent.height
+        color: "#e3e3e3"
+        Rectangle {
+            anchors.fill: parent; anchors.margins: 20
+            color: "#ff7f7f"
+            Text {
+                width: parent.width - 20
+                anchors.centerIn: parent; horizontalAlignment: Qt.AlignHCenter
+                text: "Roses are red"
+                font.pixelSize: 20
+                wrapMode: Text.WordWrap
+            }
+        }
+    }
+
+    Rectangle {
+        property string title: "Green"
+        width: parent.width; height: parent.height
+        color: "#e3e3e3"
+
+        Rectangle {
+            anchors.fill: parent; anchors.margins: 20
+            color: "#7fff7f"
+            Text {
+                width: parent.width - 20
+                anchors.centerIn: parent; horizontalAlignment: Qt.AlignHCenter
+                text: "Flower stems are green"
+                font.pixelSize: 20
+                wrapMode: Text.WordWrap
+            }
+        }
+    }
+
+    Rectangle {
+        property string title: "Blue"
+        width: parent.width; height: parent.height
+        color: "#e3e3e3"
+
+        Rectangle {
+            anchors.fill: parent; anchors.margins: 20
+            color: "#7f7fff"
+            Text {
+                width: parent.width - 20
+                anchors.centerIn: parent; horizontalAlignment: Qt.AlignHCenter
+                text: "Violets are blue"
+                font.pixelSize: 20
+                wrapMode: Text.WordWrap
+            }
+        }
+    }
+}</pre>
+<p><a name="property_document" class="subject">方法文档</a></p>
+  <p class="property"><a class="property" name="container">container</a> : Item
+  <p>这个属性控制子视图区域。</p>
+  <p>参见QML Item Element。</p>
+  <p class="property"><a class="property" name="index">index</a> : int
+  <p>这个属性记录当前视图索引，从0开始。</p>
+  <p class="property"><a class="property" name="header">header</a> : ListView
+  <p>这个属性用于控制标签头。</p>
+  <p>参见QML ListView Element。</p>
+  <p class="property"><a class="property" name="headerItemWidth">headerItemWidth</a> : int
+  <p>这个属性用于设置标签按钮宽度。</p>
+  <p class="property"><a class="property" name="headerItemHeight">headerItemHeight</a> : int
+  <p>这个属性用于设置标签按钮高度。</p>
+  <p class="property"><a class="property" name="headerAlignment">headerAlignment</a> : string
+  <p>这个属性用于控制标签按钮位置。</p>
+  <p>可能取值为：&quot;top-left&quot;, &quot;top-center&quot;, &quot;top-right&quot;, &quot;bottom-left&quot;, &quot;bottom-center&quot;, &quot;;bottom-right&quot;, &quot;left-top&quot;, &quot;left-center&quot;, &quot;left-bottom&quot;, &quot;right-top&quot;, &quot;right-center&quot;, &quot;right-bottom&quot;。</p>
+  <p class="property"><a class="property" name="switchAnimation">switchAnimation</a> : SequentialAnimation
+  <p>这个属性控制视图切换动画。</p>
+  <p>这个属性稍微复杂，不做讨论，有兴趣的朋友可以联系我。</p>
+  <p><a name="property_document" class="subject">信号文档</a></p>
+  <p class="property">TabView::<a class="property" href="#onInit">onInit</a>(string mode) </p>
+  <p>这个信号在TabView的children变化时触发，用于初始化子视图。</p>
+  <p>为避免TabView在大小变化的时候子视图能正常显示，会触发一个init(&quot;all&quot;)的信号，需要对这个状态进行处理。</p>
+</div>
+<div id="footer">
+<p>Made by lei</p>
+</div>
+</body>
+</html>

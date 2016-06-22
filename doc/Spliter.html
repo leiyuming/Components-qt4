@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Spliter参考文档</title>
+<link href="style/base.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="header">
+		<p>Components 参考文档</p>
+	</div>
+<div id="body">
+  <p class="title">Spliter控件</p>
+		<p> Spliter控件提供改变对象大小的功能  。<a href="#detial">查看详细</a></p>
+      <p>继承自CursorArea。</p>        
+		<p><a name="property" class="subject">属性</a></p>
+		<ul>
+		  <li><a class="property" href="#direction">direction</a> : Qt::Orientation</li>
+		  <li><a class="property" href="#range">range</a> : variant</li>
+	  </ul>
+  <p><a name="signals" class="subject">信号</a></p>
+      <ul>
+		  <li><a class="property" href="#onPositionChanged">onPositionChanged</a>(int dx, int dy) </li>
+      </ul>		
+		<p><a name="methods" class="subject">方法</a></p>
+		<p>参见CursorArea</p>
+  <p><a name="detail" class="subject">详细说明</a></p>
+		<p>Spliter控件提供改变对象的宽或高。</p>
+  <p><a name="usage" class="subject">用法</a></p>
+        <p>下面这个例子被包含在<a href="example/ExampleSpliter.qml">ExampleSpliter.qml</a>:</p>
+	  <pre>Rectangle {
+    width: 100; height: 100
+    color: "yellow"
+    Spliter {
+        id: spliter
+        x: parent.width - width
+        width: 2; height: parent.height
+        onPositionChanged: {parent.width = parent.width + dx}
+        Rectangle {
+            anchors.fill: parent; color: "black"
+        }
+    }
+}</pre>
+<p><a name="property_document" class="subject">属性文档</a></p>
+  <p class="property"><a class="property" name="direction">direction</a> : Qt::Orientation
+  <p>这个属性描述Spliter的方向，默认为Qt.Horizontal。</p>
+        </p>
+  <p class="property"><a class="property" name="range">range</a> : variant
+  <p>这个属性描述可调节的范围。</p>
+  <p>值需要这样填充：[0, 1000]， 第一个只为最小值，第二个值为最大值。</p>
+  <p><a name="property_document" class="subject">信号文档</a></p>
+  <p class="property">Spliter::<a class="property" href="#onPositionChanged">onPositionChanged</a>(int dx, int dy)</p>
+  <p>当鼠标在Spliter按下并拖动时触发。</p>
+</div>
+<div id="footer">
+<p>Made by lei</p>
+</div>
+</body>
+</html>

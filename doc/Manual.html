@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Components 使用文档</title>
+<link href="style/base.css" rel="stylesheet" type="text/css">
+
+<style type="text/css">
+font.dir{
+	background-color:#CCCCCC;
+}
+
+font.tip{
+	color:red;
+}
+</style>
+
+</head>
+
+
+<body>
+	<div id="header" style="height:auto;">
+		<p style="font-weight:600;">&nbsp;&nbsp;Components 使用文档<br />&nbsp;&nbsp;Version: 1.0</p>
+</div>
+<div id="body">
+  <p style="margin-left:24px;">Components 是为使用Qt/QML图形库进行开发软件的开发人员设计的QML基础元件库, 为开发人员节省大量时间。 下面我们将要介绍它的一些基本环境要求、如何在开发过程中使用Components库、 以及如何发布带有Components元件的软件产品。<br />
+  </p>
+   
+  <p style="margin-left:24px;"> 
+  
+  <p class="subject">Components的基本要求</p>
+ 
+  <ul name="require">
+    <li>Qt 4.8.4</li>
+    <li>QtQuick 1.1</li>
+  </ul>
+  
+  <!--
+    <img src="../../components-effection.jpg" width="782" height="604" align="right" />
+  <p class="subject">Components组成</p>
+  <ul name="contain">
+    <li>基本控件  -- 常用GUI控件</li>
+    <li>容器控件</li>
+	<li>扩展控件</li>
+	<li>运行时对象</li>
+  </ul>
+  
+  -->
+  
+  <p class="subject">向Qt中导入Components库的步骤：</p>
+    <ul name="stepToQt">
+    <li>step1:  解压。 解压 <font class="dir">xxx.zip</font></li>
+    <li>step2:  移动文件夹。 把刚才解压的文件夹下的 <font class="dir"> ./Components </font>文件夹拷贝到 Qt 根目录的 <font class="dir">imports </font>目录下。</li>
+	<li>step3:  开发。 做完上述2个步骤即可以开始使用Components进行开发了。</li>
+
+  </ul>
+  
+    <p class="subject">使用Components库开发的步骤：</p>
+    <ul name="stepToQt">
+    <li>step1:  引入Components库。
+  <pre>
+import QtQuick 1.1
+<font class="tip">import Components 1.0</font>
+
+Rectangle {
+...
+...
+	
+</pre>
+	</li>
+  </ul>
+  
+  <p class="subject">发布带有Components控件的可执行文件步骤</p>
+  <ul name="contain">
+    <li>step1: 生成。 生成exe可执行文件。</li>
+    <li>step2: 拷贝。 拷贝Qt根目录下的<font class="dir"> imports </font>文件夹下的<font class="dir" >./Components </font>文件夹(即Components库)到<font class="dir"> exe文件目录</font>下。</li>
+  </ul>
+  
+</p>
+
+
+
+</div>
+<div id="footer">
+<p>Made by lei</p>
+</div>
+</body>
+</html>
